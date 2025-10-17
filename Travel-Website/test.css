@@ -1,0 +1,103 @@
+/* ===== Sección de características ===== */
+
+.features-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-column {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ===== Imagen principal (de fondo) ====================================================================================================================================== */
+
+
+
+/* ===== Imagen principal (de fondo) ===== */
+#imagen-reserva {
+    background-image: url('imagen-reserva.jpeg'); /* cambia a tu nombre real */
+    background-size: cover;          /* Cubre toda la pantalla */
+    background-repeat: no-repeat;    /* Evita que se repita */
+    background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+    min-height: 100vh;               /* Ocupa toda la altura visible */
+    margin: 0;                       /* Elimina márgenes */
+}
+
+/* Si usas una imagen dentro del div (por si acaso) */
+#imagen-reserva img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.imagen-reserva {
+  position: relative; /* Permite posicionar el botón de forma absoluta dentro de este div */ 
+  display: inline-block; /* O block, según el diseño */
+  width: 100%; /* Ajusta el ancho del contenedor */
+  text-align: center; /* Para centrar el texto si el botón tiene texto*/
+}
+
+.imagen-reserva img {
+  display: block; /* Elimina el espacio extra debajo de la imagen */
+  width: 100%; /* Asegura que la imagen cubra el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.centered-button {
+  position: absolute; /* Posiciona el botón sobre la imagen */
+  top: 50%; /* Mueve el botón a la mitad verticalmente */
+  left: 50%; /* Mueve el botón a la mitad horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el botón exactamente en el medio */
+  z-index: 1; /* Asegura que el botón esté por encima de la imagen */
+  padding: 12px 25px;
+    border: none;
+    background-color: #998100;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.centered-button:hover {
+    background-color: #8cc63f;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+
+
+
+/* ===== Seccion Quienes somos ===== */
+
+.somos{
+  
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 10px;
+    
+}
