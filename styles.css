@@ -1,0 +1,356 @@
+/* ===== Estilos generales ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Barra superior con contacto y redes sociales ===== */
+.top-bar {
+    background-color:#222222; /* Fondo negro */
+    color:#998100; /* Texto dorado */
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+}
+
+.top-bar .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-bar .contact-info a {
+    color: #998100;
+    text-decoration: none;
+}
+.top-bar .contact-info i {
+    color: #998100;
+    margin-right: 5px;
+}
+
+.top-bar .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.top-bar .social-icons a {
+    color:#998100;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.top-bar .social-icons a:hover {
+    transform: scale(1.15);
+}
+
+/* ===== Encabezado principal ===== */
+header.main-header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 30px;
+}
+
+/* ===== Logo ===== */
+header .LOGO img {
+    width: 140px;
+    height: auto;
+}
+
+header h1, 
+header h2, 
+header span {
+    color: #998100; /* Letras doradas del logo si hay texto */
+}
+
+
+/* ===== Navegación ===== */
+.navegacion {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/*.navegacion li {
+    display: inline-block;
+}*/
+
+.navegacion a {
+    text-decoration: none;
+    color: #998100; /* Letras doradas */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: #8cc63f; /* Verde claro al pasar el mouse */
+}
+
+/* ===== Imagen principal (de fondo) ===== */
+#imagen-reserva {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 60vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-reserva img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== Botón centrado ===== */
+.centered-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 12px 20px;
+    border: none;
+    background-color: #998100;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* ===== Sección de características ===== */
+.features-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-column {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Imagen principal (de fondo) ====================================================================================================================================== */
+
+
+
+/* ===== Imagen principal (de fondo) ===== */
+#imagen-reserva {
+    background-image: url('imagen-reserva.jpeg'); /* cambia a tu nombre real */
+    background-size: cover;          /* Cubre toda la pantalla */
+    background-repeat: no-repeat;    /* Evita que se repita */
+    background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+    min-height: 100vh;               /* Ocupa toda la altura visible */
+    margin: 0;                       /* Elimina márgenes */
+}
+
+/* Si usas una imagen dentro del div (por si acaso) */
+#imagen-reserva img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.imagen-reserva {
+  position: relative; /* Permite posicionar el botón de forma absoluta dentro de este div */ 
+  display: inline-block; /* O block, según el diseño */
+  width: 100%; /* Ajusta el ancho del contenedor */
+  text-align: center; /* Para centrar el texto si el botón tiene texto*/
+}
+
+.imagen-reserva img {
+  display: block; /* Elimina el espacio extra debajo de la imagen */
+  width: 100%; /* Asegura que la imagen cubra el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.centered-button {
+  position: absolute; /* Posiciona el botón sobre la imagen */
+  top: 50%; /* Mueve el botón a la mitad verticalmente */
+  left: 50%; /* Mueve el botón a la mitad horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el botón exactamente en el medio */
+  z-index: 1; /* Asegura que el botón esté por encima de la imagen */
+  padding: 12px 25px;
+    border: none;
+    background-color: #998100;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.centered-button:hover {
+    background-color: #8cc63f;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+
+
+
+/* ===== Seccion Quienes somos ===== */
+
+.card-collection {
+  display: flex; /* Makes the container a flex container */
+  flex-grow: grow; /* Allows cards to wrap to the next line if space is limited */
+  gap: 1px; /* Adds space between cards */
+  justify-content: center; /* Centers the cards horizontally */
+  padding: 10px; 
+  gap: 50px; 
+ 
+  
+}
+
+.card {
+  display: flex; /* Makes each card a flex container */
+  flex-direction: column; /* Stacks content vertically within each card */
+  flex: 1 1 40px; /* Allows cards to grow, shrink, and sets a base width */
+  border: none;
+  text-align: center;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #132ec9;
+  box-shadow: no;ne
+  min-width: 5px; /* Ensures cards don't get too narrow */
+ 
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card p {
+  flex-grow: 1; /* Allows the content area to take up available space, pushing the footer down */
+  margin-bottom: 10px;
+}
+
+.card footer {
+  margin-top: auto; /* Pushes the footer to the bottom of the card */
+  font-size: 0.9em;
+  color: #666;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px; /* agrega espacio debajo de la imagen */
+}
+
+
+
+/* ===== vehiculos ===== */
+
+.vehiculos-coleccion {
+  display: flex; /* Makes the container a flex container */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line if space is limited */
+  gap: 20px; /* Adds space between cards */
+  justify-content: center; /* Centers the cards horizontally */
+  padding: 20px;
+}
+
+.vehiculos {
+  display: flex; /* Makes each card a flex container */
+  flex-direction: column; /* Stacks content vertically within each card */
+  flex: 1 1 250px; /* Allows cards to grow, shrink, and sets a base width */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 200px; /* Ensures cards don't get too narrow */
+}
+
+.vehiculos h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.vehiculos p {
+  flex-grow: 1; /* Allows the content area to take up available space, pushing the footer down */
+  margin-bottom: 10px;
+}
+
+.boton-vehiculo1 footer {
+  margin-top: auto; /* Pushes the footer to the bottom of the card */
+  font-size: 0.9em;
+  color: #666;
+}
+
+.boton-vehiculo1 {
+  margin-top: auto; /* Pushes the footer to the bottom of the card */
+  font-size: 0.9em;
+  color: #666;
+  background-color: #998100;
+}
+
+/* ===== Excursiones ===== */
+
+.excursiones-coleccion {
+  display: flex; /* Makes the container a flex container */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line if space is limited */
+  gap: 20px; /* Adds space between cards */
+  justify-content: center; /* Centers the cards horizontally */
+  padding: 20px;
+}
+
+.excursiones {
+  display: flex; /* Makes each card a flex container */
+  flex-direction: column; /* Stacks content vertically within each card */
+  flex: 1 1 250px; /* Allows cards to grow, shrink, and sets a base width */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 200px; /* Ensures cards don't get too narrow */
+}
+
+.excursiones h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.excursiones p {
+  flex-grow: 1; /* Allows the content area to take up available space, pushing the footer down */
+  margin-bottom: 10px;
+}
+
+.boton-excursiones1 footer {
+  margin-top: auto; /* Pushes the footer to the bottom of the card */
+  font-size: 0.9em;
+  color: #666;
+}
+
+.boton-excursiones1 {
+  margin-top: auto; /* Pushes the footer to the bottom of the card */
+  font-size: 0.9em;
+  color: #666;
+  background-color: #998100;
+}
