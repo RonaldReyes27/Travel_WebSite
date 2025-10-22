@@ -1,0 +1,628 @@
+/* ========================================================== */
+/* 1. RESET Y ESTILOS GENERALES (ADAPTADO)                    */
+/* ========================================================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Color de fondo base */
+    color: white;
+    scroll-behavior: smooth;
+    line-height: 1.6; /* Añadido para mejor legibilidad */
+}
+
+/* Encabezados y color primario */
+h1, h2, h3 {
+    color: #998100; /* Color distintivo para títulos */
+}
+
+/* Estilos de párrafos */
+p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* ========================================================== */
+/* 2. BARRA SUPERIOR (top-bar)                                */
+/* ========================================================== */
+.top-bar {
+    background-color: #222222;
+    color: #998100;
+    padding: 6px 60px; /* Ajustado el padding para el layout */
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between; /* Para separar info y redes */
+    align-items: center;
+}
+
+.top-bar .contact-info span {
+    margin-right: 15px;
+}
+
+.top-bar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.top-bar .social-icons a {
+    color: #998100;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.top-bar .social-icons a:hover {
+    color: white;
+}
+
+
+/* ========================================================== */
+/* 3. ENCABEZADO Y NAVEGACIÓN (main-header, navegacion)       */
+/* ADAPTADO DE .navbar A .main-header Y .navegacion       */
+/* ========================================================== */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 15px 60px; /* Misma configuración que tenías en .navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header h1 {
+    /* El logo ahora es un h1 con dos spans para el color */
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0; /* Asegura que no haya margen */
+}
+
+.main-header .logo-bold,
+.main-header .logo-light {
+    color: #998100; /* Color principal para el logo */
+}
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #998100;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* ====== EFECTOS DE RAYA (ADAPTADO A .navegacion) ====== */
+.navegacion a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #998100;
+    transition: width 0.3s ease;
+}
+
+.navegacion a:hover::after,
+.navegacion a.activo::after { /* Clase 'activo' de tu HTML */
+    width: 100%;
+}
+
+
+/* ========================================================== */
+/* 4. SECCIONES (SPA Logic)                                   */
+/* ADAPTADO DE section A .app-section                      */
+/* ========================================================== */
+/* Clase base aplicada a todas las secciones controladas por JS */
+.app-section {
+    padding: 80px 0%;
+    min-height: 100vh;
+    background-color: #fff;
+    /* Lógica de ocultar/mostrar secciones por defecto (SPA) */
+    display: none; 
+    /* Animación de entrada */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Clase activa (para la sección visible) */
+.active-section { /* ADAPTADO DE section.active A .active-section */
+    display: block; /* Muestra la sección */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.app-section h1 { /* Título principal dentro de la sección */
+    font-size: 38px;
+    margin-bottom: 15px;
+    text-align: center; /* Centramos los títulos principales para un look más limpio */
+}
+
+/* Estilos para el contenido original, si se quiere ocultar/mostrar */
+#pages {
+    /* Aquí puedes poner estilos específicos para el contenido 'antiguo' */
+    text-align: center; /* Tus h1 tenían un style="text-align: center;" */
+}
+
+/* ========================================================== */
+/* 5. SECCIONES ESPECÍFICAS                                   */
+/* ========================================================== */
+
+/* IMÁGENES DENTRO DE LAS SECCIONES */
+.app-section img {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(153, 129, 0, 0.3);
+    display: block; /* Para centrar con margin: auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SERVICIOS */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px; /* Aumentado para separación del título */
+}
+
+.service-card {
+    background: #111;
+    border: 1px solid #998100;
+    border-radius: 10px;
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(153, 129, 0, 0.5);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #998100;
+    margin-bottom: 10px;
+}
+
+/* PAQUETES */
+.packages-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.packages-list li {
+    margin-bottom: 12px;
+    font-size: 17px;
+    color: #ccc;
+    background-color: #222; /* Fondo sutil para mejor lectura */
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 3px solid #998100;
+}
+
+/* CONTACTO */
+.contact-section {
+    text-align: center;
+}
+
+.contact-hero {
+   background-image: url('turismo-contact.jpg'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px; /* Altura del banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* Color del texto sobre la imagen */
+    position: relative; /* Necesario para el overlay */
+    padding: 0; /* Asegurarse de que no herede padding */
+    margin: 0; /* Asegurarse de que no herede márgenes */
+}
+.contact-hero-overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Capa semitransparente para mejor legibilidad */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Pequeño padding interno para el texto */
+}
+
+.contact-hero h1 {
+    font-size: 4em; /* Tamaño del título principal */
+    margin-bottom: 10px;
+    color: #fff; /* Asegura que el título sea blanco */
+    font-weight: bold;
+}
+.contact-hero p {
+    font-size: 1.5em; /* Tamaño del subtítulo */
+    color: #f0f0f0;
+}
+
+/* Estilos para el contenido inferior (Image 2) */
+.contact-content {
+    display: flex; /* Para poner las dos columnas lado a lado */
+    flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
+    justify-content: space-between; /* Espacia las columnas */
+    padding: 60px 10%; /* Relleno lateral para el contenido de texto, como en tu imagen */
+    background-color: #f8f8f8; /* Fondo claro para esta sección */
+    gap: 40px; /* Espacio entre las columnas */
+}
+
+
+.contact-info,
+.contact-form {
+    flex: 1; /* Hace que cada columna ocupe el espacio disponible */
+    min-width: 300px; /* Ancho mínimo antes de apilarse */
+}
+
+.contact-content h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.contact-content h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-detail i {
+    color: #007bff; /* Color para los iconos de teléfono, email, etc. */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 120px;
+}
+
+.submit-button {
+    background-color: #28a745; /* Color del botón "Book Now" de tu ejemplo anterior */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para los iconos sociales */
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.instagram { background-color: #C13584; }
+.social-icon.tripadvisor { background-color: #00af87; } /* O un color más representativo */
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Apila las columnas en pantallas pequeñas */
+        padding: 40px 5%;
+    }
+    .contact-hero h1 {
+        font-size: 2.5em;
+    }
+    .contact-hero p {
+        font-size: 1.2em;
+    }
+}
+
+/* ========================================================== */
+/* 6. SECCIÓN DE VEHÍCULOS                                    */
+/* ========================================================== */
+
+#vehicles {
+    padding: 40px 0;
+}
+
+#vehicles h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: #998100;
+}
+
+/* Cuadrícula optimizada para 3 columnas */
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fuerza 3 columnas */
+    gap: 20px; /* Espacio más reducido */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1%;
+}
+
+/* Tarjetas */
+.vehicle-card {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.vehicle-image-container {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.vehicle-card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.vehicle-card h3 {
+    color: #998100;
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+/* Detalles */
+.vehicle-details {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.vehicle-details p {
+    font-size: 0.95em;
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+}
+
+.vehicle-details i {
+    color: #28a745;
+    margin-right: 8px;
+}
+
+/* Botón */
+.book-now-button {
+    background-color: #f7a637;
+    color: #1a1a1a;
+    padding: 10px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+    background-color: #e5972f;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .vehicle-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .vehicle-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ========================================================== */   
+
+/* ========================================================== */
+/* 7. MEDIA QUERIES (RESPONSIVE)                              */
+/* ========================================================== */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        padding: 5px 20px;
+    }
+    
+    .main-header {
+        padding: 15px 20px;
+        /* Podrías añadir aquí lógica para un menú hamburguesa */
+    }
+
+    .navegacion ul {
+        gap: 15px;
+    }
+    
+    .app-section {
+        padding: 60px 5%;
+    }
+
+    .app-section h1 {
+        font-size: 30px;
+    }
+
+    .service-card {
+        width: 100%; /* Las tarjetas ocupan todo el ancho en móvil */
+        max-width: 300px;
+    }
+}
+
+
+/* ========================================================== */   
+
+/* ========================================================== */
+/* 7. EXCURSIONES(RESPONSIVE)                              */
+/* ========================================================== */
+
+
+
+.excursiones {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  padding: 20px px;
+
+}
+
+.excursiones {
+  text-align: center;
+  padding: 40px;
+}
+
+.excursiones h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+    border: 1px solid #998100;
+    border-radius: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: #111;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.price {
+  background: #ff7133;
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: bold;
+  position: static;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 15px 15px 15px;
+}
+
+.info {
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #666;
+}
