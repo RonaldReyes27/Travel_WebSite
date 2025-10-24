@@ -1,430 +1,517 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    
-    <div class="top-bar">
-        <div class="contact-info">
-            <span><i class="fa-regular fa-envelope" aria-hidden="true"></i> <a href="mailto:alvissantana1121@gmail.com">alvissantana1121@gmail.com</a></span>
-            <span>|</span>
-            <span><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+18291234567">+1 829-123-4567</a></span>
-        </div>
 
-        <div class="social-icons" aria-label="Redes sociales">
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-            <a href="#" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-        </div>
+  <div class="top-bar">
+    <div class="contact-info">
+      <span><i class="fa-regular fa-envelope" aria-hidden="true"></i> <a href="mailto:alvissantana1121@gmail.com">alvissantana1121@gmail.com</a></span>
+      <span>|</span>
+      <span><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+18291234567">+1 829-123-4567</a></span>
     </div>
 
- <header class="main-header">
-        <div class="logo" aria-hidden="true">
-            <h2><span class="logo-bold">TRAVEL</span><span class="logo-light">ER</span></h2>
+    <div class="social-icons" aria-label="Redes sociales">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+      <a href="#" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="logo" aria-hidden="true">
+      <h2><span class="logo-bold">TRAVEL</span><span class="logo-light">ER</span></h2>
+    </div>
+
+    <nav class="navegacion" aria-label="Menú principal">
+      <ul>
+        <li><a href="#home" class="activo">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="app-section active-section">
+      <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
+
+      <section id="services" class="services-section">
+        <h1>Servicios</h1>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Safety First</h3>
+            <p>Your security is our priority. Our trained, full-time drivers and regularly inspected vehicles guarantee a safe journey.</p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-user"></i>
+            <h3>Luxury Transfers</h3>
+            <p>Experience premium private transfers in the Dominican Republic at the lowest prices. Unlike third-party services, we own our vehicles and employ our drivers, ensuring top-tier service at competitive rates. </p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-car"></i>
+            <h3>Top-Notch Fleet</h3>
+            <p>Enjoy the newest luxury vehicles for your airport transfers—because quality is our standard.</p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Exclusive Amenities</h3>
+            <p>Stay connected with premium WiFi, refresh with cold beverages, and enjoy a seamless, comfortable ride. Your convenience is our mission.</p>
+          </div>
         </div>
+      </section>
 
-        <nav class="navegacion" aria-label="Menú principal">
-            <ul>
-                <li><a href="#home" class="activo">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#tours">Tour Packages</a></li>
-                <li><a href="#pages">Pages</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <section class="transport-card">
+        <h1>Punta Cana Airport Transfer & Transportation Services</h1>
+        <hr>
 
-     <main>
-        
-        <section id="home" class="app-section active-section">
-             <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
-             
-            <section id="services" class="services-section">
-          <h1>Servicios</h1>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <h3>Safety First</h3>
-                    <p>Your security is our priority. Our trained, full-time drivers and regularly inspected vehicles guarantee a safe journey.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fa-solid fa-user"></i>
-                    <h3>Luxury Transfers</h3>
-                    <p>Experience premium private transfers in the Dominican Republic at the lowest prices. Unlike third-party services, we own our vehicles and employ our drivers, ensuring top-tier service at competitive rates. </p>
-                </div>
-                <div class="service-card">
-                    <i class="fa-solid fa-car"></i>
-                    <h3>Top-Notch Fleet</h3>
-                    <p>Enjoy the newest luxury vehicles for your airport transfers—because quality is our standard.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h3>Exclusive Amenities</h3>
-                    <p>Stay connected with premium WiFi, refresh with cold beverages, and enjoy a seamless, comfortable ride. Your convenience is our mission.</p>
-                </div>
-            </div>
-            </section>
+        <section class="transport-section">
+          <div class="transport-card">
+            <h2>Professional Services Available 24/7</h2>
+            <p>
+              PUJ International Airport is your gateway to paradise. Our services provide reliable transportation to your destination. Whether you arrive at Terminal A or B, our drivers will be waiting.
+            </p>
+            <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
+          </div>
 
-           <section id="vehicles">
-    <h1>Vehículos</h1>
+          <div class="transport-card">
+            <h2>Professional Services Available 24/7</h2>
+            <p>
+              PUJ International Airport is your gateway to paradise. Our services provide reliable transportation to your destination. Whether you arrive at Terminal A or B, our drivers will be waiting.
+            </p>
+            <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
+          </div>
 
-    <div class="vehicle-grid">
-        <div class="vehicle-card">
+          <div class="transport-card">
+            <h2>Professional Services Available 24/7</h2>
+            <p>
+              PUJ International Airport is your gateway to paradise. Our services provide reliable transportation to your destination. Whether you arrive at Terminal A or B, our drivers will be waiting.
+            </p>
+            <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
+          </div>
+        </section>
+
+      </section><!-- FIX: cerrado el wrapper .transport-card que faltaba -->
+
+      <section class="home-text">
+        <h1>Why choose <span>Punta Cana Transfer</span>?</h1>
+        <p>
+          If you're searching for an affordable, secure, dependable, and comfortable transfer service, you've come to the right spot! 
+          We take pride in providing the finest service in the Dominican Republic. 
+          <br><br>
+          With our main focus in <strong>Punta Cana</strong>, we also operate throughout the entire country. 
+          <br>
+          Wherever you want to go, simply inform us, and we'll make it a reality!
+        </p>
+        <a href="#contact" class="btn">Book Now</a>
+      </section>
+
+      <section id="vehicles">
+        <h1>Vehículos</h1>
+
+        <div class="vehicle-grid">
+          <div class="vehicle-card">
             <div class="vehicle-image-container">
-                <img src="https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg" alt="Small SUV Chevrolet">
+              <img src="https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg" alt="Small SUV Chevrolet">
             </div>
             <h3>Small SUV</h3>
             <div class="vehicle-details">
-                <p><i class="fas fa-check-circle"></i> Vehicle Type: SUV</p>
-                <p><i class="fas fa-users"></i> 4 Passengers</p>
-                <p><i class="fas fa-suitcase-rolling"></i> 2 Suitcases</p>
+              <p><i class="fas fa-check-circle"></i> Vehicle Type: SUV</p>
+              <p><i class="fas fa-users"></i> 4 Passengers</p>
+              <p><i class="fas fa-suitcase-rolling"></i> 2 Suitcases</p>
             </div>
             <a href="#" class="book-now-button">RESERVAR AHORA</a>
-        </div>
+          </div>
 
-        <div class="vehicle-card">
+          <div class="vehicle-card">
             <div class="vehicle-image-container">
-                <img src="https://cdn.pixabay.com/photo/2017/03/27/13/32/suv-2179220_1280.jpg" alt="Mid SUV Chevrolet">
+              <img src="https://cdn.pixabay.com/photo/2017/03/27/13/32/suv-2179220_1280.jpg" alt="Mid SUV Chevrolet">
             </div>
             <h3>Mid SUV</h3>
             <div class="vehicle-details">
-                <p><i class="fas fa-check-circle"></i> Vehicle Type: SUV</p>
-                <p><i class="fas fa-users"></i> 6 Passengers</p>
-                <p><i class="fas fa-suitcase-rolling"></i> 4 Suitcases</p>
+              <p><i class="fas fa-check-circle"></i> Vehicle Type: SUV</p>
+              <p><i class="fas fa-users"></i> 6 Passengers</p>
+              <p><i class="fas fa-suitcase-rolling"></i> 4 Suitcases</p>
             </div>
             <a href="#" class="book-now-button">RESERVAR AHORA</a>
-        </div>
+          </div>
 
-        <div class="vehicle-card">
+          <div class="vehicle-card">
             <div class="vehicle-image-container">
-                <img src="https://cdn.pixabay.com/photo/2013/07/13/12/37/car-159479_1280.png" alt="Luxury Sedan">
+              <img src="https://cdn.pixabay.com/photo/2013/07/13/12/37/car-159479_1280.png" alt="Luxury Sedan">
             </div>
             <h3>Luxury Sedan</h3>
             <div class="vehicle-details">
-                <p><i class="fas fa-check-circle"></i> Vehicle Type: Sedan</p>
-                <p><i class="fas fa-users"></i> 4 Passengers</p>
-                <p><i class="fas fa-suitcase-rolling"></i> 2 Suitcases</p>
+              <p><i class="fas fa-check-circle"></i> Vehicle Type: Sedan</p>
+              <p><i class="fas fa-users"></i> 4 Passengers</p>
+              <p><i class="fas fa-suitcase-rolling"></i> 2 Suitcases</p>
             </div>
             <a href="#" class="book-now-button">RESERVAR AHORA</a>
-        </div>
+          </div>
 
-        <div class="vehicle-card">
+          <div class="vehicle-card">
             <div class="vehicle-image-container">
-                <img src="https://cdn.pixabay.com/photo/2015/08/11/12/17/taxi-884950_1280.jpg" alt="Taxi Service">
+              <img src="https://cdn.pixabay.com/photo/2015/08/11/12/17/taxi-884950_1280.jpg" alt="Taxi Service">
             </div>
             <h3>Taxi Premium</h3>
             <div class="vehicle-details">
-                <p><i class="fas fa-check-circle"></i> Vehicle Type: Sedan</p>
-                <p><i class="fas fa-users"></i> 3 Passengers</p>
-                <p><i class="fas fa-suitcase-rolling"></i> 2 Suitcases</p>
+              <p><i class="fas fa-check-circle"></i> Vehicle Type: Sedan</p>
+              <p><i class="fas fa-users"></i> 3 Passengers</p>
+              <p><i class="fas fa-suitcase-rolling"></i> 2 Suitcases</p>
             </div>
             <a href="#" class="book-now-button">RESERVAR AHORA</a>
-        </div>
+          </div>
 
-        <div class="vehicle-card">
+          <div class="vehicle-card">
             <div class="vehicle-image-container">
-                <img src="https://cdn.pixabay.com/photo/2016/03/27/19/40/minibus-1281732_1280.jpg" alt="Van Service">
+              <img src="https://cdn.pixabay.com/photo/2016/03/27/19/40/minibus-1281732_1280.jpg" alt="Van Service">
             </div>
             <h3>Mini Van</h3>
             <div class="vehicle-details">
-                <p><i class="fas fa-check-circle"></i> Vehicle Type: Van</p>
-                <p><i class="fas fa-users"></i> 8 Passengers</p>
-                <p><i class="fas fa-suitcase-rolling"></i> 6 Suitcases</p>
+              <p><i class="fas fa-check-circle"></i> Vehicle Type: Van</p>
+              <p><i class="fas fa-users"></i> 8 Passengers</p>
+              <p><i class="fas fa-suitcase-rolling"></i> 6 Suitcases</p>
             </div>
             <a href="#" class="book-now-button">RESERVAR AHORA</a>
-        </div>
+          </div>
 
-        <div class="vehicle-card">
+          <div class="vehicle-card">
             <div class="vehicle-image-container">
-                <img src="https://cdn.pixabay.com/photo/2018/02/23/21/49/bus-3175743_1280.jpg" alt="Bus Shuttle">
+              <img src="https://cdn.pixabay.com/photo/2018/02/23/21/49/bus-3175743_1280.jpg" alt="Bus Shuttle">
             </div>
             <h3>Bus Shuttle</h3>
             <div class="vehicle-details">
-                <p><i class="fas fa-check-circle"></i> Vehicle Type: Bus</p>
-                <p><i class="fas fa-users"></i> 20 Passengers</p>
-                <p><i class="fas fa-suitcase-rolling"></i> 15 Suitcases</p>
+              <p><i class="fas fa-check-circle"></i> Vehicle Type: Bus</p>
+              <p><i class="fas fa-users"></i> 20 Passengers</p>
+              <p><i class="fas fa-suitcase-rolling"></i> 15 Suitcases</p>
             </div>
             <a href="#" class="book-now-button">RESERVAR AHORA</a>
+          </div>
         </div>
-    </div>
-</section>
-            <section id="excursions" class="excursiones">   
-                    <h1>Excursiones</h1>
-             <h2>EXCURSIONES EN PUNTA CANA REPÚBLICA DOMINICANA</h2>
-             <div class="cards">
-                
-                <div class="card">
-                <img src="https://goservicestour.com/wp-content/uploads/2018/03/monkey-land-explorer-from-punta-cana-go-services-tours.jpg" alt="Monkey Land">
-                <div class="price">$45.00 - $84.00</div>
-                <h3>Explorador de Monkey Land desde Punta Cana</h3>
-                <p>El Monkey Land Explorer de Punta Cana es una excursión guiada</p>
-                <div class="info">
-                    <span>🕒 5H</span>
-                    <span>✔ Incluye</span>
-                    <a href="#" class="book-now-button">RESERVAR AHORA</a>
-                </div>
-                </div>
+      </section>
 
-                <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" alt="Buggy">
-                <div class="price">$105.00 - $130.00</div>
-                <h3>Aventura en buggy con baño en cueva</h3>
-                <p>Incluye la conducción de buggies por Punta Cana</p>
-                <div class="info">
-                    <span>🕒 3H</span>
-                    <span>🏖 Playa</span>
-                    <a href="#" class="book-now-button">RESERVAR AHORA</a>
-                </div>
-                </div>
+      <section id="excursions" class="excursiones">
+        <h1>Excursiones</h1>
+        <h2>EXCURSIONES EN PUNTA CANA REPÚBLICA DOMINICANA</h2>
+        <div class="cards">
 
-                <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" alt="Samana">
-                <div class="price">$100.00 - $105.00</div>
-                <h3>Samaná Discovery Tour desde Punta Cana</h3>
-                <p>El Samana Discovery Tour ofrece un día completo</p>
-                <div class="info">
-                    <span>🏖 Playa</span>
-                    <span>✔ Incluye</span>
-                    <a href="#" class="book-now-button">RESERVAR AHORA</a>    
-                </div>
-                </div>
+          <div class="card">
+            <img src="https://goservicestour.com/wp-content/uploads/2018/03/monkey-land-explorer-from-punta-cana-go-services-tours.jpg" alt="Monkey Land">
+            <div class="price">$45.00 - $84.00</div>
+            <h3>Explorador de Monkey Land desde Punta Cana</h3>
+            <p>El Monkey Land Explorer de Punta Cana es una excursión guiada</p>
+            <div class="info">
+              <span>🕒 5H</span>
+              <span>✔ Incluye</span>
+              <a href="#" class="book-now-button">RESERVAR AHORA</a>
+            </div>
+          </div>
 
-                <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" alt="Compras">
-                <div class="price">$15.00</div>
-                <h3>Punta Cana Tour de Compras</h3>
-                <p>Sumérjase en la vibrante cultura de la República Dominicana</p>
-                <div class="info">
-                    <span>🕒 6H</span>
-                    <span>👨‍👩‍👧 Todas las edades</span>
-                    <a href="#" class="book-now-button">RESERVAR AHORA</a>
-                </div>
-                </div>
-            </section>
+          <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" alt="Buggy">
+            <div class="price">$105.00 - $130.00</div>
+            <h3>Aventura en buggy con baño en cueva</h3>
+            <p>Incluye la conducción de buggies por Punta Cana</p>
+            <div class="info">
+              <span>🕒 3H</span>
+              <span>🏖 Playa</span>
+              <a href="#" class="book-now-button">RESERVAR AHORA</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" alt="Samana">
+            <div class="price">$100.00 - $105.00</div>
+            <h3>Samaná Discovery Tour desde Punta Cana</h3>
+            <p>El Samana Discovery Tour ofrece un día completo</p>
+            <div class="info">
+              <span>🏖 Playa</span>
+              <span>✔ Incluye</span>
+              <a href="#" class="book-now-button">RESERVAR AHORA</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" alt="Compras">
+            <div class="price">$15.00</div>
+            <h3>Punta Cana Tour de Compras</h3>
+            <p>Sumérjase en la vibrante cultura de la República Dominicana</p>
+            <div class="info">
+              <span>🕒 6H</span>
+              <span>👨‍👩‍👧 Todas las edades</span>
+              <a href="#" class="book-now-button">RESERVAR AHORA</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </section><!-- FIX: solo cerramos #home (se eliminó un </div> extra que no tenía apertura) -->
+
+    <!-- === ABOUT US === -->
+    <section id="about" class="app-section" aria-label="Acerca de nosotros">
+      <!-- Hero -->
+      <header class="about-hero">
+        <div class="about-hero__bg"></div>
+        <div class="about-hero__tint"></div>
+        <div class="about-hero__content container">
+          <span class="about-eyebrow">Acerca de nosotros</span>
+          <h1>Acerca de los servicios de traslado en Punta Cana</h1>
+          <p>Su socio de confianza para experiencias inolvidables en el paraíso desde 2010.</p>
+        </div>
+      </header>
+
+      <!-- Historia -->
+      <section aria-labelledby="about-historia-title" class="about-section">
+        <div class="container">
+          <h2 id="about-historia-title" class="about-title fade-up">Nuestra historia</h2>
+          <p class="about-sub fade-up">De un sueño a la realidad, descubre cómo nos convertimos en un servicio líder de traslados y tours en Punta Cana.</p>
+
+          <div class="about-history">
+            <div class="fade-up">
+              <p>Fundada en 2010 con una visión simple pero contundente: brindar servicios de transporte seguros, cómodos y confiables que superen las expectativas de nuestros huéspedes. Lo que comenzó como una pequeña empresa familiar con un solo vehículo se ha convertido en una de las empresas de traslados y tours más confiables de Punta Cana.</p>
+              <p>Nuestro fundador, impulsado por una pasión por la hospitalidad y un profundo amor por la República Dominicana, reconoció la necesidad de servicios de transporte premium que permitieran a los visitantes relajarse verdaderamente y disfrutar de sus vacaciones desde el momento en que llegaban.</p>
+              <p>Hoy, nos enorgullecemos de haber atendido a más de 50,000 clientes de todo el mundo, creando recuerdos inolvidables en el hermoso destino de Punta Cana.</p>
             </div>
 
+            <!-- Cambia la imagen por la tuya -->
+            <div class="about-photo fade-up" role="img" aria-label="Buggies recorriendo caminos en Punta Cana"></div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Valores -->
+      <section aria-labelledby="about-valores-title" class="about-section about-values-wrap">
+        <div class="container">
+          <h2 id="about-valores-title" class="about-title fade-up">Nuestros valores</h2>
+          <p class="about-sub fade-up">Los principios que guían todo lo que hacemos.</p>
 
+          <div class="about-values">
+            <article class="about-card fade-up">
+              <div class="about-icon">🛡️</div>
+              <h3>Seguridad ante todo</h3>
+              <p>Mantenimiento regular, conductores certificados y protocolos estrictos.</p>
+            </article>
 
+            <article class="about-card fade-up">
+              <div class="about-icon">❤️</div>
+              <h3>Atención al cliente</h3>
+              <p>Trato cercano y personalizado para que cada experiencia sea memorable.</p>
+            </article>
 
+            <article class="about-card fade-up">
+              <div class="about-icon">⏱️</div>
+              <h3>Fiabilidad</h3>
+              <p>Puntualidad y compromiso. Siempre a tiempo para que usted disfrute.</p>
+            </article>
 
+            <article class="about-card fade-up">
+              <div class="about-icon">🌿</div>
+              <h3>Sostenibilidad</h3>
+              <p>Promovemos prácticas responsables y turismo consciente.</p>
+            </article>
 
+            <article class="about-card fade-up">
+              <div class="about-icon">💎</div>
+              <h3>Excelencia</h3>
+              <p>Mejora continua en flota, procesos y servicio.</p>
+            </article>
 
+            <article class="about-card fade-up">
+              <div class="about-icon">🤝</div>
+              <h3>Integridad</h3>
+              <p>Precios transparentes y comunicación honesta.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
 
+    <!-- === TOURS === -->
+    <section id="tours" class="app-section"> 
+      <h1>Paquetes Turísticos</h1>
+      <p>Tenemos opciones para todos los gustos: aventura, relax, familia o pareja. Elige el paquete que más se adapte a ti.</p>
+      <ul class="packages-list">
+        <li>🏝️ Escapada Romántica - 3 noches todo incluido</li>
+        <li>🏄 Aventura Extrema - Tour por 5 islas del Caribe</li>
+        <li>🌅 Descubre Punta Cana - 4 días con transporte VIP</li>
+      </ul>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         </section>
-
-         <section id="about" class="app-section">
-            <h1>Sobre Nosotros</h1>
-            <p>Traveler es una agencia dedicada a ofrecer experiencias turísticas excepcionales. Nuestro equipo está comprometido con la calidad, la seguridad y el confort de cada viajero.</p>
-            <p>Desde Punta Cana hasta los rincones más exóticos del Caribe, convertimos cada viaje en una historia inolvidable.</p>
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Equipo de viajes">
-        </section>
-         <section id="about" class="app-section">
-            <h1>Sobre Nosotros</h1>
-            <p>Traveler es una agencia dedicada a ofrecer experiencias turísticas excepcionales. Nuestro equipo está comprometido con la calidad, la seguridad y el confort de cada viajero.</p>
-            <p>Desde Punta Cana hasta los rincones más exóticos del Caribe, convertimos cada viaje en una historia inolvidable.</p>
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Equipo de viajes">
-        </section>
-
- 
-
-        <section id="tours" class="app-section"> 
-            <h1>Paquetes Turísticos</h1>
-            <p>Tenemos opciones para todos los gustos: aventura, relax, familia o pareja. Elige el paquete que más se adapte a ti.</p>
-            <ul class="packages-list">
-                <li>🏝️ Escapada Romántica - 3 noches todo incluido</li>
-                <li>🏄 Aventura Extrema - Tour por 5 islas del Caribe</li>
-                <li>🌅 Descubre Punta Cana - 4 días con transporte VIP</li>
-            </ul>
-        </section>
-
-        <section id="contact" class="app-section">
-           <div class="contact-hero">
+    <section id="contact" class="app-section">
+      <div class="contact-hero">
         <div class="contact-hero-overlay">
-            <h1>Contacte con nosotros</h1>
-            <p>Nos encantaría conocer su opinión.</p>
+          <h1>Contacte con nosotros</h1>
+          <p>Nos encantaría conocer su opinión.</p>
         </div>
-        </div>
+      </div>
 
-    <div class="contact-content">
+      <div class="contact-content">
         <div class="contact-info">
-            <h2>¿Le gustaría hablar?</h2>
-            <h3>DATOS DE CONTACTO</h3>
-            <p>Somos una empresa dedicada a ofrecer traslados y excursiones en la República Dominicana. Ofrecemos un servicio de calidad para que nuestros clientes tengan la mejor experiencia durante su estancia en nuestro país.</p>
-            
-            <p class="contact-detail">
-                <i class="fas fa-map-marker-alt"></i> Punta Cana 23000, República Dominicana
-            </p>
-            <p class="contact-detail">
-                <i class="fas fa-phone"></i> +1 (809) 123-4567
-            </p>
-            <p class="contact-detail">
-                <i class="fas fa-envelope"></i> sales@melachupa.com
-            </p>
+          <h2>¿Le gustaría hablar?</h2>
+          <h3>DATOS DE CONTACTO</h3>
+          <p>Somos una empresa dedicada a ofrecer traslados y excursiones en la República Dominicana. Ofrecemos un servicio de calidad para que nuestros clientes tengan la mejor experiencia durante su estancia en nuestro país.</p>
+          
+          <p class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i> Punta Cana 23000, República Dominicana
+          </p>
+          <p class="contact-detail">
+            <i class="fas fa-phone"></i> +1 (809) 123-4567
+          </p>
+          <p class="contact-detail">
+            <i class="fas fa-envelope"></i> sales@melachupa.com
+          </p>
 
-            <div class="social-links">
-                <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon tripadvisor"><i class="fab fa-tripadvisor"></i></a>
-            </div>
+          <div class="social-links">
+            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon tripadvisor"><i class="fab fa-tripadvisor"></i></a>
+          </div>
         </div>
 
         <div class="contact-form">
-            <h2>¿Tiene alguna pregunta?</h2>
-            <h3>PONTE EN CONTACTO</h3>
-            <form>
-                <div class="form-group">
-                    <label for="name">Nombre *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Comentario o mensaje</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-                <button type="submit" class="submit-button">Enviar Mensaje</button>
-            </form>
+          <h2>¿Tiene alguna pregunta?</h2>
+          <h3>PONTE EN CONTACTO</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Comentario o mensaje</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar Mensaje</button>
+          </form>
         </div>
-        </section>
-        
-        <section id="pages" class="app-section">
-             <section id="imagen-reserva" class="imagen-reserva" aria-label="Imagen de reserva">
-                <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
-                <button class="centered-button" aria-label="Reservar ahora">Reservar ahora</button>
-            </section>
+      </div>
+    </section>
+    
+    <section id="blog" class="app-section">
+      <section id="imagen-reserva" class="imagen-reserva" aria-label="Imagen de reserva">
+        <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
+        <button class="centered-button" aria-label="Reservar ahora">Reservar ahora</button>
+      </section>
 
-            <section class="review" aria-label="Reseñas">
-                <h1 style="text-align: center;">Review</h1>
-                <div class="sk-ww-tripadvisor-reviews" data-embed-id="25611157"></div>
-                <script src="https://widgets.sociablekit.com/tripadvisor-reviews/widget.js" defer></script>
-            </section>
+      <section class="review" aria-label="Reseñas">
+        <h1 style="text-align: center;">Review</h1>
+        <div class="sk-ww-tripadvisor-reviews" data-embed-id="25611157"></div>
+        <script src="https://widgets.sociablekit.com/tripadvisor-reviews/widget.js" defer></script>
+      </section>
 
-            <section class="somos" aria-label="Quienes somos">
-                <h1 style="text-align: center;">Quienes Somos</h1>
-                    <div class="card-collection">
-                    <div class="card">
-                        <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" width="100" height="100">
-                        <h2>Tranporte</h2>
-                        <p>This is the content for card 1.</p>
-                        <footer>Footer for Card 1</footer>
-                    </div>
+      <section class="somos" aria-label="Quienes somos">
+        <h1 style="text-align: center;">Quienes Somos</h1>
+        <div class="card-collection">
+          <div class="card">
+            <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" width="100" height="100">
+            <h2>Tranporte</h2>
+            <p>This is the content for card 1.</p>
+            <footer>Footer for Card 1</footer>
+          </div>
 
-                    <div class="card">
-                        <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/5417/5417432.png" width="100" height="100">
-                        <h2>Puntualidad</h2>
-                        <p>This card has a bit more content, .</p>
-                        <p>More content here.</p>
-                        <footer>Footer for Card 2</footer>
-                    </div>
-                    
-                    <div class="card">
-                        <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/9413/9413653.png" width="100" height="100">
-                        <h2>Seguridad</h2>
-                        <p>Short content for card 3.</p>
-                        <footer>Footer for Card 3</footer>
-                    </div>
+          <div class="card">
+            <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/5417/5417432.png" width="100" height="100">
+            <h2>Puntualidad</h2>
+            <p>This card has a bit more content, .</p>
+            <p>More content here.</p>
+            <footer>Footer for Card 2</footer>
+          </div>
+          
+          <div class="card">
+            <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/9413/9413653.png" width="100" height="100">
+            <h2>Seguridad</h2>
+            <p>Short content for card 3.</p>
+            <footer>Footer for Card 3</footer>
+          </div>
 
-                    <div class="card">
-                        <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/3500/3500896.png" width="100" height="100">
-                        <h2>Calidad</h2>
-                        <p>Short content for card 3.</p>
-                        <footer>Footer for Card 3</footer>
-                    </div>
-                </div>
-            </section>
+          <div class="card">
+            <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/3500/3500896.png" width="100" height="100">
+            <h2>Calidad</h2>
+            <p>Short content for card 3.</p>
+            <footer>Footer for Card 3</footer>
+          </div>
+        </div>
+      </section>
 
-            <section class="vehiculos-apartado" aria-label="Nuestros vehiculos">
-                <h1 style="text-align: center;">Nuestros vehiculos</h1>
+      <section class="vehiculos-apartado" aria-label="Nuestros vehiculos">
+        <h1 style="text-align: center;">Nuestros vehiculos</h1>
 
-                <div class="vehiculos-coleccion">
-                    <div class="vehiculos">
-                        <h2>Card Title 1</h2>
-                        <p>This is the content for card 1.</p>
-                        <button class="boton-vehiculo1" aria-label="Ver Aqui">Reservar ahora</button>
-                    </div>
+        <div class="vehiculos-coleccion">
+          <div class="vehiculos">
+            <h2>Card Title 1</h2>
+            <p>This is the content for card 1.</p>
+            <button class="boton-vehiculo1" aria-label="Ver Aqui">Reservar ahora</button>
+          </div>
 
-                    <div class="vehiculos">
-                        <h2>Card Title 2</h2>
-                        <p>This card has a bit more content, demonstrating how Flexbox handles varying content heights.</p>
-                        <p>More content here.</p>
-                        <footer>Footer for Card 2</footer>
-                    </div>
-                    
-                    <div class="vehiculos">
-                        <h2>Card Title 3</h2>
-                        <p>Short content for card 3.</p>
-                        <footer>Footer for Card 3</footer>
-                    </div>
-                </div>
-            </section>
+          <div class="vehiculos">
+            <h2>Card Title 2</h2>
+            <p>This card has a bit more content, demonstrating how Flexbox handles varying content heights.</p>
+            <p>More content here.</p>
+            <footer>Footer for Card 2</footer>
+          </div>
+          
+          <div class="vehiculos">
+            <h2>Card Title 3</h2>
+            <p>Short content for card 3.</p>
+            <footer>Footer for Card 3</footer>
+          </div>
+        </div>
+      </section>
 
+      <section class="excursiones-apartado" aria-label="Nuestras Excursiones">
+        <h1 style="text-align: center;">Nuestras Excursiones</h1>
 
-            <section class="excursiones-apartado" aria-label="Nuestras Excursiones">
-                <h1 style="text-align: center;">Nuestras Excursiones</h1>
+        <div class="excursiones-coleccion">
+          <div class="excursiones">
+            <h2>Card Title 1</h2>
+            <p>This is the content for card 1.</p>
+            <button class="boton-excursiones1" aria-label="Ver Aqui">Reservar ahora</button>
+          </div>
 
-                <div class="excursiones-coleccion">
-                    <div class="excursiones">
-                        <h2>Card Title 1</h2>
-                        <p>This is the content for card 1.</p>
-                        <button class="boton-excursiones1" aria-label="Ver Aqui">Reservar ahora</button>
-                    </div>
+          <div class="excursiones">
+            <h2>Card Title 2</h2>
+            <p>This card has a bit more content, demonstrating how Flexbox handles varying content heights.</p>
+            <p>More content here.</p>
+            <footer>Footer for Card 2</footer>
+          </div>
+          
+          <div class="excursiones">
+            <h2>Card Title 3</h2>
+            <p>Short content for card 3.</p>
+            <footer>Footer for Card 3</footer>
+          </div>
 
-                    <div class="excursiones">
-                        <h2>Card Title 2</h2>
-                        <p>This card has a bit more content, demonstrating how Flexbox handles varying content heights.</p>
-                        <p>More content here.</p>
-                        <footer>Footer for Card 2</footer>
-                    </div>
-                    
-                    <div class="excursiones">
-                        <h2>Card Title 3</h2>
-                        <p>Short content for card 3.</p>
-                        <footer>Footer for Card 3</footer>
-                    </div>
+          <div class="excursiones">
+            <h2>Card Title 4</h2>
+            <p>Short content for card 3.</p>
+            <footer>Footer for Card 3</footer>
+          </div>
+        </div>
+      </section>
 
-                    <div class="excursiones">
-                        <h2>Card Title 4</h2>
-                        <p>Short content for card 3.</p>
-                        <footer>Footer for Card 3</footer>
-                    </div>
-                </div>
-            </section>
+      <section class="formulario-contactarnos" aria-label="Formulario para contactarnos">
+        <h1 style="text-align: center;">Formulario para contactarnos</h1>
+      </section>
 
-            <section class="formulario-contactarnos" aria-label="Formulario para contactarnos">
-                <h1 style="text-align: center;">Formulario para contactarnos</h1>
-            </section>
+    </section>
 
-        </section>
-        
-        </main>
+  </main>
 
-    </body>
+</body>
 </html>
