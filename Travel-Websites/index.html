@@ -1,517 +1,358 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Web</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="main.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LIMOUSINESERVICE.PL – Class and Comfort</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="top-bar">
-    <div class="contact-info">
-      <span><i class="fa-regular fa-envelope" aria-hidden="true"></i> <a href="mailto:alvissantana1121@gmail.com">alvissantana1121@gmail.com</a></span>
-      <span>|</span>
-      <span><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+18291234567">+1 829-123-4567</a></span>
-    </div>
+  <!-- =================== NAVBAR =================== -->
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a class="brand" href="#hero">LIMOUSINESERVICE.PL</a>
 
-    <div class="social-icons" aria-label="Redes sociales">
-      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-      <a href="#" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-    </div>
-  </div>
+      <nav class="menu">
+        <a href="#services">Services</a>
+      <a href="pages/cars.html">Cars</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+        <button class="lang" aria-label="Language">EN</button>
+      </nav>
 
-  <header class="main-header">
-    <div class="logo" aria-hidden="true">
-      <h2><span class="logo-bold">TRAVEL</span><span class="logo-light">ER</span></h2>
+      <div class="actions">
+        <a class="tel" href="tel:+48226353000">+48 22 635 30 00</a>
+        <a class="btn btn-gold" href="#booking">Quote / Book</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-
-    <nav class="navegacion" aria-label="Menú principal">
-      <ul>
-        <li><a href="#home" class="activo">Home</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#tours">Tours</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-
-    <section id="home" class="app-section active-section">
-      <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
-
-      <section id="services" class="services-section">
-        <h1>Servicios</h1>
-        <div class="services-grid">
-          <div class="service-card">
-            <i class="fa-solid fa-shield-halved"></i>
-            <h3>Safety First</h3>
-            <p>Your security is our priority. Our trained, full-time drivers and regularly inspected vehicles guarantee a safe journey.</p>
-          </div>
-          <div class="service-card">
-            <i class="fa-solid fa-user"></i>
-            <h3>Luxury Transfers</h3>
-            <p>Experience premium private transfers in the Dominican Republic at the lowest prices. Unlike third-party services, we own our vehicles and employ our drivers, ensuring top-tier service at competitive rates. </p>
-          </div>
-          <div class="service-card">
-            <i class="fa-solid fa-car"></i>
-            <h3>Top-Notch Fleet</h3>
-            <p>Enjoy the newest luxury vehicles for your airport transfers—because quality is our standard.</p>
-          </div>
-          <div class="service-card">
-            <i class="fa-solid fa-location-dot"></i>
-            <h3>Exclusive Amenities</h3>
-            <p>Stay connected with premium WiFi, refresh with cold beverages, and enjoy a seamless, comfortable ride. Your convenience is our mission.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="transport-card">
-        <h1>Punta Cana Airport Transfer & Transportation Services</h1>
-        <hr>
-
-        <section class="transport-section">
-          <div class="transport-card">
-            <h2>Professional Services Available 24/7</h2>
-            <p>
-              PUJ International Airport is your gateway to paradise. Our services provide reliable transportation to your destination. Whether you arrive at Terminal A or B, our drivers will be waiting.
-            </p>
-            <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
-          </div>
-
-          <div class="transport-card">
-            <h2>Professional Services Available 24/7</h2>
-            <p>
-              PUJ International Airport is your gateway to paradise. Our services provide reliable transportation to your destination. Whether you arrive at Terminal A or B, our drivers will be waiting.
-            </p>
-            <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
-          </div>
-
-          <div class="transport-card">
-            <h2>Professional Services Available 24/7</h2>
-            <p>
-              PUJ International Airport is your gateway to paradise. Our services provide reliable transportation to your destination. Whether you arrive at Terminal A or B, our drivers will be waiting.
-            </p>
-            <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
-          </div>
-        </section>
-
-      </section><!-- FIX: cerrado el wrapper .transport-card que faltaba -->
-
-      <section class="home-text">
-        <h1>Why choose <span>Punta Cana Transfer</span>?</h1>
-        <p>
-          If you're searching for an affordable, secure, dependable, and comfortable transfer service, you've come to the right spot! 
-          We take pride in providing the finest service in the Dominican Republic. 
-          <br><br>
-          With our main focus in <strong>Punta Cana</strong>, we also operate throughout the entire country. 
-          <br>
-          Wherever you want to go, simply inform us, and we'll make it a reality!
-        </p>
-        <a href="#contact" class="btn">Book Now</a>
-      </section>
-
-      <section id="vehicles">
-        <h1>Vehículos</h1>
-
-        <div class="vehicle-grid">
-          <div class="vehicle-card">
-            <div class="vehicle-image-container">
-              <img src="https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg" alt="Small SUV Chevrolet">
-            </div>
-            <h3>Small SUV</h3>
-            <div class="vehicle-details">
-              <p><i class="fas fa-check-circle"></i> Vehicle Type: SUV</p>
-              <p><i class="fas fa-users"></i> 4 Passengers</p>
-              <p><i class="fas fa-suitcase-rolling"></i> 2 Suitcases</p>
-            </div>
-            <a href="#" class="book-now-button">RESERVAR AHORA</a>
-          </div>
-
-          <div class="vehicle-card">
-            <div class="vehicle-image-container">
-              <img src="https://cdn.pixabay.com/photo/2017/03/27/13/32/suv-2179220_1280.jpg" alt="Mid SUV Chevrolet">
-            </div>
-            <h3>Mid SUV</h3>
-            <div class="vehicle-details">
-              <p><i class="fas fa-check-circle"></i> Vehicle Type: SUV</p>
-              <p><i class="fas fa-users"></i> 6 Passengers</p>
-              <p><i class="fas fa-suitcase-rolling"></i> 4 Suitcases</p>
-            </div>
-            <a href="#" class="book-now-button">RESERVAR AHORA</a>
-          </div>
-
-          <div class="vehicle-card">
-            <div class="vehicle-image-container">
-              <img src="https://cdn.pixabay.com/photo/2013/07/13/12/37/car-159479_1280.png" alt="Luxury Sedan">
-            </div>
-            <h3>Luxury Sedan</h3>
-            <div class="vehicle-details">
-              <p><i class="fas fa-check-circle"></i> Vehicle Type: Sedan</p>
-              <p><i class="fas fa-users"></i> 4 Passengers</p>
-              <p><i class="fas fa-suitcase-rolling"></i> 2 Suitcases</p>
-            </div>
-            <a href="#" class="book-now-button">RESERVAR AHORA</a>
-          </div>
-
-          <div class="vehicle-card">
-            <div class="vehicle-image-container">
-              <img src="https://cdn.pixabay.com/photo/2015/08/11/12/17/taxi-884950_1280.jpg" alt="Taxi Service">
-            </div>
-            <h3>Taxi Premium</h3>
-            <div class="vehicle-details">
-              <p><i class="fas fa-check-circle"></i> Vehicle Type: Sedan</p>
-              <p><i class="fas fa-users"></i> 3 Passengers</p>
-              <p><i class="fas fa-suitcase-rolling"></i> 2 Suitcases</p>
-            </div>
-            <a href="#" class="book-now-button">RESERVAR AHORA</a>
-          </div>
-
-          <div class="vehicle-card">
-            <div class="vehicle-image-container">
-              <img src="https://cdn.pixabay.com/photo/2016/03/27/19/40/minibus-1281732_1280.jpg" alt="Van Service">
-            </div>
-            <h3>Mini Van</h3>
-            <div class="vehicle-details">
-              <p><i class="fas fa-check-circle"></i> Vehicle Type: Van</p>
-              <p><i class="fas fa-users"></i> 8 Passengers</p>
-              <p><i class="fas fa-suitcase-rolling"></i> 6 Suitcases</p>
-            </div>
-            <a href="#" class="book-now-button">RESERVAR AHORA</a>
-          </div>
-
-          <div class="vehicle-card">
-            <div class="vehicle-image-container">
-              <img src="https://cdn.pixabay.com/photo/2018/02/23/21/49/bus-3175743_1280.jpg" alt="Bus Shuttle">
-            </div>
-            <h3>Bus Shuttle</h3>
-            <div class="vehicle-details">
-              <p><i class="fas fa-check-circle"></i> Vehicle Type: Bus</p>
-              <p><i class="fas fa-users"></i> 20 Passengers</p>
-              <p><i class="fas fa-suitcase-rolling"></i> 15 Suitcases</p>
-            </div>
-            <a href="#" class="book-now-button">RESERVAR AHORA</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="excursions" class="excursiones">
-        <h1>Excursiones</h1>
-        <h2>EXCURSIONES EN PUNTA CANA REPÚBLICA DOMINICANA</h2>
-        <div class="cards">
-
-          <div class="card">
-            <img src="https://goservicestour.com/wp-content/uploads/2018/03/monkey-land-explorer-from-punta-cana-go-services-tours.jpg" alt="Monkey Land">
-            <div class="price">$45.00 - $84.00</div>
-            <h3>Explorador de Monkey Land desde Punta Cana</h3>
-            <p>El Monkey Land Explorer de Punta Cana es una excursión guiada</p>
-            <div class="info">
-              <span>🕒 5H</span>
-              <span>✔ Incluye</span>
-              <a href="#" class="book-now-button">RESERVAR AHORA</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" alt="Buggy">
-            <div class="price">$105.00 - $130.00</div>
-            <h3>Aventura en buggy con baño en cueva</h3>
-            <p>Incluye la conducción de buggies por Punta Cana</p>
-            <div class="info">
-              <span>🕒 3H</span>
-              <span>🏖 Playa</span>
-              <a href="#" class="book-now-button">RESERVAR AHORA</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" alt="Samana">
-            <div class="price">$100.00 - $105.00</div>
-            <h3>Samaná Discovery Tour desde Punta Cana</h3>
-            <p>El Samana Discovery Tour ofrece un día completo</p>
-            <div class="info">
-              <span>🏖 Playa</span>
-              <span>✔ Incluye</span>
-              <a href="#" class="book-now-button">RESERVAR AHORA</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" alt="Compras">
-            <div class="price">$15.00</div>
-            <h3>Punta Cana Tour de Compras</h3>
-            <p>Sumérjase en la vibrante cultura de la República Dominicana</p>
-            <div class="info">
-              <span>🕒 6H</span>
-              <span>👨‍👩‍👧 Todas las edades</span>
-              <a href="#" class="book-now-button">RESERVAR AHORA</a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-    </section><!-- FIX: solo cerramos #home (se eliminó un </div> extra que no tenía apertura) -->
-
-    <!-- === ABOUT US === -->
-    <section id="about" class="app-section" aria-label="Acerca de nosotros">
-      <!-- Hero -->
-      <header class="about-hero">
-        <div class="about-hero__bg"></div>
-        <div class="about-hero__tint"></div>
-        <div class="about-hero__content container">
-          <span class="about-eyebrow">Acerca de nosotros</span>
-          <h1>Acerca de los servicios de traslado en Punta Cana</h1>
-          <p>Su socio de confianza para experiencias inolvidables en el paraíso desde 2010.</p>
-        </div>
-      </header>
-
-      <!-- Historia -->
-      <section aria-labelledby="about-historia-title" class="about-section">
-        <div class="container">
-          <h2 id="about-historia-title" class="about-title fade-up">Nuestra historia</h2>
-          <p class="about-sub fade-up">De un sueño a la realidad, descubre cómo nos convertimos en un servicio líder de traslados y tours en Punta Cana.</p>
-
-          <div class="about-history">
-            <div class="fade-up">
-              <p>Fundada en 2010 con una visión simple pero contundente: brindar servicios de transporte seguros, cómodos y confiables que superen las expectativas de nuestros huéspedes. Lo que comenzó como una pequeña empresa familiar con un solo vehículo se ha convertido en una de las empresas de traslados y tours más confiables de Punta Cana.</p>
-              <p>Nuestro fundador, impulsado por una pasión por la hospitalidad y un profundo amor por la República Dominicana, reconoció la necesidad de servicios de transporte premium que permitieran a los visitantes relajarse verdaderamente y disfrutar de sus vacaciones desde el momento en que llegaban.</p>
-              <p>Hoy, nos enorgullecemos de haber atendido a más de 50,000 clientes de todo el mundo, creando recuerdos inolvidables en el hermoso destino de Punta Cana.</p>
-            </div>
-
-            <!-- Cambia la imagen por la tuya -->
-            <div class="about-photo fade-up" role="img" aria-label="Buggies recorriendo caminos en Punta Cana"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Valores -->
-      <section aria-labelledby="about-valores-title" class="about-section about-values-wrap">
-        <div class="container">
-          <h2 id="about-valores-title" class="about-title fade-up">Nuestros valores</h2>
-          <p class="about-sub fade-up">Los principios que guían todo lo que hacemos.</p>
-
-          <div class="about-values">
-            <article class="about-card fade-up">
-              <div class="about-icon">🛡️</div>
-              <h3>Seguridad ante todo</h3>
-              <p>Mantenimiento regular, conductores certificados y protocolos estrictos.</p>
-            </article>
-
-            <article class="about-card fade-up">
-              <div class="about-icon">❤️</div>
-              <h3>Atención al cliente</h3>
-              <p>Trato cercano y personalizado para que cada experiencia sea memorable.</p>
-            </article>
-
-            <article class="about-card fade-up">
-              <div class="about-icon">⏱️</div>
-              <h3>Fiabilidad</h3>
-              <p>Puntualidad y compromiso. Siempre a tiempo para que usted disfrute.</p>
-            </article>
-
-            <article class="about-card fade-up">
-              <div class="about-icon">🌿</div>
-              <h3>Sostenibilidad</h3>
-              <p>Promovemos prácticas responsables y turismo consciente.</p>
-            </article>
-
-            <article class="about-card fade-up">
-              <div class="about-icon">💎</div>
-              <h3>Excelencia</h3>
-              <p>Mejora continua en flota, procesos y servicio.</p>
-            </article>
-
-            <article class="about-card fade-up">
-              <div class="about-icon">🤝</div>
-              <h3>Integridad</h3>
-              <p>Precios transparentes y comunicación honesta.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <!-- === TOURS === -->
-    <section id="tours" class="app-section"> 
-      <h1>Paquetes Turísticos</h1>
-      <p>Tenemos opciones para todos los gustos: aventura, relax, familia o pareja. Elige el paquete que más se adapte a ti.</p>
-      <ul class="packages-list">
-        <li>🏝️ Escapada Romántica - 3 noches todo incluido</li>
-        <li>🏄 Aventura Extrema - Tour por 5 islas del Caribe</li>
-        <li>🌅 Descubre Punta Cana - 4 días con transporte VIP</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="app-section">
-      <div class="contact-hero">
-        <div class="contact-hero-overlay">
-          <h1>Contacte con nosotros</h1>
-          <p>Nos encantaría conocer su opinión.</p>
-        </div>
-      </div>
-
-      <div class="contact-content">
-        <div class="contact-info">
-          <h2>¿Le gustaría hablar?</h2>
-          <h3>DATOS DE CONTACTO</h3>
-          <p>Somos una empresa dedicada a ofrecer traslados y excursiones en la República Dominicana. Ofrecemos un servicio de calidad para que nuestros clientes tengan la mejor experiencia durante su estancia en nuestro país.</p>
-          
-          <p class="contact-detail">
-            <i class="fas fa-map-marker-alt"></i> Punta Cana 23000, República Dominicana
-          </p>
-          <p class="contact-detail">
-            <i class="fas fa-phone"></i> +1 (809) 123-4567
-          </p>
-          <p class="contact-detail">
-            <i class="fas fa-envelope"></i> sales@melachupa.com
-          </p>
-
-          <div class="social-links">
-            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon tripadvisor"><i class="fab fa-tripadvisor"></i></a>
-          </div>
-        </div>
-
-        <div class="contact-form">
-          <h2>¿Tiene alguna pregunta?</h2>
-          <h3>PONTE EN CONTACTO</h3>
-          <form>
-            <div class="form-group">
-              <label for="name">Nombre *</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Correo electrónico *</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Comentario o mensaje</label>
-              <textarea id="message" name="message"></textarea>
-            </div>
-            <button type="submit" class="submit-button">Enviar Mensaje</button>
-          </form>
-        </div>
-      </div>
-    </section>
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="hero" data-parallax>
+    <!-- Si tienes video, colócalo en /assets/hero.mp4 y descomenta: -->
     
-    <section id="blog" class="app-section">
-      <section id="imagen-reserva" class="imagen-reserva" aria-label="Imagen de reserva">
-        <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="Traslado privado - vehículo" />
-        <button class="centered-button" aria-label="Reservar ahora">Reservar ahora</button>
-      </section>
+    <video class="hero-media" autoplay muted loop playsinline>
+      <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Imagen fallback (puedes reemplazarla por la tuya en /assets/hero.jpg) -->
+    <div class="hero-media" style="background-image:url('https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg');"></div>
 
-      <section class="review" aria-label="Reseñas">
-        <h1 style="text-align: center;">Review</h1>
-        <div class="sk-ww-tripadvisor-reviews" data-embed-id="25611157"></div>
-        <script src="https://widgets.sociablekit.com/tripadvisor-reviews/widget.js" defer></script>
-      </section>
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <h1>Class and comfort</h1>
+        <p>Prestigious chauffeur-driven limousine rental for exceptional journeys.</p>
+        <a class="btn btn-outline" href="#about">Read More →</a>
+      </div>
 
-      <section class="somos" aria-label="Quienes somos">
-        <h1 style="text-align: center;">Quienes Somos</h1>
-        <div class="card-collection">
-          <div class="card">
-            <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/9249/9249336.png" width="100" height="100">
-            <h2>Tranporte</h2>
-            <p>This is the content for card 1.</p>
-            <footer>Footer for Card 1</footer>
-          </div>
-
-          <div class="card">
-            <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/5417/5417432.png" width="100" height="100">
-            <h2>Puntualidad</h2>
-            <p>This card has a bit more content, .</p>
-            <p>More content here.</p>
-            <footer>Footer for Card 2</footer>
-          </div>
-          
-          <div class="card">
-            <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/9413/9413653.png" width="100" height="100">
-            <h2>Seguridad</h2>
-            <p>Short content for card 3.</p>
-            <footer>Footer for Card 3</footer>
-          </div>
-
-          <div class="card">
-            <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/3500/3500896.png" width="100" height="100">
-            <h2>Calidad</h2>
-            <p>Short content for card 3.</p>
-            <footer>Footer for Card 3</footer>
-          </div>
+      <!-- Booking Card -->
+      <aside class="booking reveal" id="booking">
+        <div class="tabs">
+          <button class="tab active" data-tab="oneway">One way</button>
+          <button class="tab" data-tab="hourly">Hourly</button>
         </div>
-      </section>
 
-      <section class="vehiculos-apartado" aria-label="Nuestros vehiculos">
-        <h1 style="text-align: center;">Nuestros vehiculos</h1>
+        <form class="booking-form" id="form-oneway" autocomplete="off">
+          <label class="field">
+            <span>Pickup location</span>
+            <input type="text" placeholder="Airport / Hotel / Address" required>
+          </label>
+          <label class="field">
+            <span>Destination</span>
+            <input type="text" placeholder="City / Address" required>
+          </label>
+          <label class="field">
+            <span>Date</span>
+            <input type="date" required>
+          </label>
+          <div class="grid-2">
+            <label class="field">
+              <span>Hour</span>
+              <input type="number" min="0" max="23" placeholder="HH" required>
+            </label>
+            <label class="field">
+              <span>Minutes</span>
+              <input type="number" min="0" max="59" placeholder="MM" required>
+            </label>
+          </div>
+          <button class="btn btn-gold w-100" type="submit">Search →</button>
+          <p class="tz-hint" id="tzHint"></p>
+        </form>
 
-        <div class="vehiculos-coleccion">
-          <div class="vehiculos">
-            <h2>Card Title 1</h2>
-            <p>This is the content for card 1.</p>
-            <button class="boton-vehiculo1" aria-label="Ver Aqui">Reservar ahora</button>
-          </div>
+        <form class="booking-form hidden" id="form-hourly" autocomplete="off">
+          <label class="field">
+            <span>Pickup location</span>
+            <input type="text" placeholder="Airport / Hotel / Address" required>
+          </label>
+          <label class="field">
+            <span>Date</span>
+            <input type="date" required>
+          </label>
+          <label class="field">
+            <span>Hours</span>
+            <input type="number" min="1" max="24" placeholder="e.g., 3" required>
+          </label>
+          <button class="btn btn-gold w-100" type="submit">Search →</button>
+          <p class="tz-hint" id="tzHint2"></p>
+        </form>
+      </aside>
+    </div>
+  </section>
 
-          <div class="vehiculos">
-            <h2>Card Title 2</h2>
-            <p>This card has a bit more content, demonstrating how Flexbox handles varying content heights.</p>
-            <p>More content here.</p>
-            <footer>Footer for Card 2</footer>
-          </div>
-          
-          <div class="vehiculos">
-            <h2>Card Title 3</h2>
-            <p>Short content for card 3.</p>
-            <footer>Footer for Card 3</footer>
-          </div>
+ <!-- SERVICES -->
+<section id="services" class="section section--light">
+  <div class="container">
+    <header class="section-head head-row reveal">
+      <h2>Our Services</h2>
+      <a class="more-link" href="#about">More About Services →</a>
+    </header>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <article class="svc-card reveal">
+        <div class="svc-media">
+          <img
+            src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg"
+            alt="Luxury Chauffeur Service">
         </div>
-      </section>
-
-      <section class="excursiones-apartado" aria-label="Nuestras Excursiones">
-        <h1 style="text-align: center;">Nuestras Excursiones</h1>
-
-        <div class="excursiones-coleccion">
-          <div class="excursiones">
-            <h2>Card Title 1</h2>
-            <p>This is the content for card 1.</p>
-            <button class="boton-excursiones1" aria-label="Ver Aqui">Reservar ahora</button>
-          </div>
-
-          <div class="excursiones">
-            <h2>Card Title 2</h2>
-            <p>This card has a bit more content, demonstrating how Flexbox handles varying content heights.</p>
-            <p>More content here.</p>
-            <footer>Footer for Card 2</footer>
-          </div>
-          
-          <div class="excursiones">
-            <h2>Card Title 3</h2>
-            <p>Short content for card 3.</p>
-            <footer>Footer for Card 3</footer>
-          </div>
-
-          <div class="excursiones">
-            <h2>Card Title 4</h2>
-            <p>Short content for card 3.</p>
-            <footer>Footer for Card 3</footer>
-          </div>
+        <div class="svc-body">
+          <h3>Luxury Chauffeur Service</h3>
+          <p>Enjoy refined travel with our luxury chauffeur service, offering premium comfort and seamless journeys worldwide.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
         </div>
-      </section>
+      </article>
 
-      <section class="formulario-contactarnos" aria-label="Formulario para contactarnos">
-        <h1 style="text-align: center;">Formulario para contactarnos</h1>
-      </section>
+      <!-- Card 2 -->
+      <article class="svc-card reveal">
+        <div class="svc-media">
+          <img
+            src="https://images.unsplash.com/photo-1606665813986-0e7d6f9c0b70?q=80&w=1600&auto=format&fit=crop"
+            alt="Corporate Travel and Events">
+        </div>
+        <div class="svc-body">
+          <h3>Corporate Travel and Events</h3>
+          <p>Our corporate chauffeur service provides punctual, discreet transport for business trips and events, ensuring best experience.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+      </article>
 
-    </section>
+      <!-- Card 3 -->
+      <article class="svc-card reveal">
+        <div class="svc-media">
+          <img
+            src="https://images.unsplash.com/photo-1518544801976-3e188ea7c4f0?q=80&w=1600&auto=format&fit=crop"
+            alt="Airports Transfer Service">
+        </div>
+        <div class="svc-body">
+          <h3>Airports Transfer Service</h3>
+          <p>Start or end your trip smoothly with our airport transfer service, focused on timely pickups and effortless comfort.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-  </main>
+ <!-- CARS (carousel) -->
+<section id="cars" class="section">
+  <div class="container">
+    <header class="section-head head-row reveal">
+      <h2>Our Cars</h2>
+      <a class="more-link" href="#cars-all">Our Fleet →</a>
+    </header>
 
+    <div class="car-carousel">
+      <button class="car-nav car-prev" aria-label="Previous">←</button>
+
+      <div class="car-track" id="carTrack">
+        <!-- Slide 1 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>Mercedes E-Class Avantgarde</h3>
+            <span class="car-class">Business Class</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="https://dominicanairporttransfers.com/images/transfers/private_transfer_1.jpeg" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>4</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>4</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>Mercedes S-Class long</h3>
+            <span class="car-class">Luxury Class</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="https://images.unsplash.com/photo-1549921296-3fdc0d0b2a5b?q=80&w=1600&auto=format&fit=crop" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>4</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>4</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>BMW 7 Series long</h3>
+            <span class="car-class">Luxury Class</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1600&auto=format&fit=crop" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>4</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>4</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+
+        <!-- Slide 4 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>Mercedes S-Class 560 4Matic AMG long</h3>
+            <span class="car-class">Luxury Class</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c36a?q=80&w=1600&auto=format&fit=crop" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>4</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>4</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+
+        <!-- Slide 5 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>Range Rover Autobiography</h3>
+            <span class="car-class">Luxury SUV Class</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1600&auto=format&fit=crop" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>4</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>4</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+      </div>
+
+      <button class="car-nav car-next" aria-label="Next">→</button>
+    </div>
+  </div>
+</section>
+
+ <!-- ABOUT (white preview panel) -->
+<section id="about" class="section about-preview">
+  <div class="container">
+    <div class="about-card reveal">
+      <span class="about-bar" aria-hidden="true"></span>
+
+      <div class="about-wrap">
+        <!-- Galería izquierda -->
+        <div class="about-gallery">
+          <img src="https://images.unsplash.com/photo-1599252251295-8b0c0c2b79c2?q=80&w=1200&auto=format&fit=crop" alt="">
+          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="">
+          <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee8f0?q=80&w=1200&auto=format&fit=crop" alt="">
+        </div>
+
+        <!-- Texto derecha -->
+        <div class="about-copy">
+          <header class="head-row">
+            <h2>About Us</h2>
+            <a class="more-link" href="#about-full">More About Us →</a>
+          </header>
+
+          <p><strong>Limousineservice.pl</strong> is a Polish chauffeur service dedicated to providing an exceptional level of care, with our clients’ needs at the very heart of our work. We are a team of experienced perfectionists, striving to offer you complete freedom and comfort, while leaving the details to us.</p>
+
+          <p>Our service includes a carefully selected team of top-tier chauffeurs and luxury limousines, available throughout Poland and numerous international destinations. Every detail of your journey is meticulously crafted to match your unique requirements.</p>
+
+          <p>Our professional, discreet, and transparent service also includes comprehensive concierge support. Book your chauffeur service with us and let us take care of everything.</p>
+
+          <aside class="award row">
+            <img class="award-logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Luxlife_logo.svg" alt="LUXlife">
+            <p>We are a proud winner of the <em>LuxLife Best International Limousine &amp; Chauffeur Service Award</em>.</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- =================== CONTACT BAND =================== -->
+  <section class="contact-band" id="contact">
+    <div class="container band-grid">
+      <div class="band-item">
+        <span class="band-title">Phone</span>
+        <a href="tel:+48226353000">+48 22 635 30 00</a>
+      </div>
+      <div class="band-item">
+        <span class="band-title">E-mail</span>
+        <a href="mailto:info@limousineservice.pl">info@limousineservice.pl</a>
+      </div>
+      <div class="band-item">
+        <span class="band-title">WhatsApp</span>
+        <a href="https://wa.me/48721600000" target="_blank" rel="noopener">48721600000</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Company Details</h4>
+        <p>LIMOS.PL Nowicki S.K.A.<br>Niska 3/18<br>00-179 Warsaw, Poland<br>NIP EU: PL 525-19-10-653</p>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <p>Biały Kamień 2 / U6<br>02-593 Warsaw, Poland</p>
+        <a class="btn btn-small" href="#">Download vCard</a>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon – Fri: 9:00 am – 5:00 pm<br>Sat – Sun: Office closed</p>
+        <p class="muted">We monitor emails, webchat and phone calls outside of office hours.</p>
+      </div>
+    </div>
+
+    <div class="container legal">
+      <span>All rights reserved © <span id="year"></span></span>
+      <nav class="foot-nav">
+        <a href="#">Career</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating -->
+  <a class="wa" href="https://wa.me/48721600000" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp Us</a>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>

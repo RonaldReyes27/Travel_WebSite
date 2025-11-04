@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cars • LimousineService</title>
+
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- Estilos específicos de la página de autos -->
+  <link rel="stylesheet" href="../css/cars.css">
+</head>
+<body class="dark">
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../index.html">LIMOUSINESERVICE.PL</a>
+
+      <nav class="menu">
+        <a href="../index.html#services">Services</a>
+        <a class="active" href="cars.html" data-external>Cars</a>
+        <a href="../index.html#about">About us</a>
+        <a href="../index.html#contact">Contact</a>
+        <span class="lang-pill">EN</span>
+        <a class="phone" href="tel:+48226353000">+48 22 635 30 00</a>
+        <a class="btn btn-gold" href="../index.html#booking">Quote / Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO DE CARS (encabezado con imagen + botones) ============ -->
+<section class="cars-hero-banner">
+  <!-- Imagen de fondo (cámbiala si quieres) -->
+  <div class="cars-hero-bg"
+       style="background-image:url('../assets/cars-hero.jpg');"></div>
+
+  <!-- Overlay para oscurecer -->
+  <div class="cars-hero-overlay"></div>
+
+  <div class="container cars-hero-content reveal-up">
+    <p class="cars-hero-kicker">Business Class</p>
+    <h1 class="cars-hero-title">Mercedes E-Class Avantgarde</h1>
+
+    <div class="cars-hero-actions">
+      <a href="#carDetail" class="btn btn-outline">Car Details →</a>
+      <a href="#" class="cars-link">Download Price List</a>
+    </div>
+
+    <div class="cars-hero-scroll">
+      <span>Scroll all cars</span>
+      <span class="cars-hero-bar"><i id="carsProgress"></i></span>
+    </div>
+
+    <!-- Badge opcional -->
+    <div class="wifi-badge">
+      <div class="dot"></div>
+      <div>
+        <strong>FREE WiFi</strong>
+        <div class="muted">ONBOARD</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ============ STRIP / CARRUSEL ============ -->
+  <section class="cars-strip-wrap">
+    <div class="container">
+      <div class="strip-toolbar">
+        <button class="strip-btn" id="prevBtn" aria-label="Prev">←</button>
+        <button class="strip-btn" id="nextBtn" aria-label="Next">→</button>
+      </div>
+
+      <div class="cars-strip" id="carsStrip" tabindex="0" aria-label="Vehicles carousel">
+        <!-- Los ítems se generan desde JS con los datos del array -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DETALLE ============ -->
+  <section class="car-detail-section">
+    <div class="container car-detail" id="carDetail">
+      <!-- El detalle se renderiza al dar clic en un vehículo -->
+      <div class="detail-image">
+        <img id="detailImg" src="" alt="">
+      </div>
+
+      <aside class="detail-info">
+        <h2 id="detailTitle"></h2>
+        <p class="detail-class" id="detailClass"></p>
+
+        <div class="detail-stats">
+          <div><strong id="detailPassengers">4</strong> Passengers</div>
+          <div><strong id="detailBags">4</strong> Bags</div>
+        </div>
+
+        <ul class="detail-features" id="detailFeatures"></ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 LimousineService</div>
+      <nav class="footer-links">
+        <a href="#">Career</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- JS global (si lo usas) -->
+  <script src="../scripts/main.js"></script>
+  <!-- JS específico de la página de autos -->
+  <script src="../scripts/cars.js"></script>
+</body>
+</html>
