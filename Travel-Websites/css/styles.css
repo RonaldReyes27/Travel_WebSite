@@ -20,7 +20,7 @@ body{
 }
 
 /* Containers */
-.container{width:min(1200px,92%);margin-inline:auto}
+.container{width:min(1650px,92%);margin-inline:auto}
 
 /* ===== Header ===== */
 .site-header{
@@ -242,7 +242,7 @@ body{
 .car-card:hover{ transform:translateY(-4px); box-shadow:0 18px 40px rgba(0,0,0,.28); }
 
 .car-card--light{
-  background:#eef1f4;          /* panel claro como el ejemplo */
+  background:#1981e9;          /* panel claro como el ejemplo */
   color:#111;
 }
 .car-card--dark{
@@ -577,3 +577,4 @@ body{
   .thumbs{ grid-template-columns:repeat(4,1fr); }
   .car-hero img{ height:340px; }
 }
+

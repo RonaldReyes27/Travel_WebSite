@@ -12,20 +12,26 @@
 </head>
 <body class="dark">
 
-  <!-- ============ HEADER ============ -->
-  <header class="site-header">
+  <!-- =================== NAVBAR =================== -->
+  <header class="site-header" id="header">
     <div class="container nav">
       <a class="brand" href="../index.html">LIMOUSINESERVICE.PL</a>
 
       <nav class="menu">
-        <a href="../index.html#services">Services</a>
-        <a class="active" href="cars.html" data-external>Cars</a>
-        <a href="../index.html#about">About us</a>
-        <a href="../index.html#contact">Contact</a>
-        <span class="lang-pill">EN</span>
-        <a class="phone" href="tel:+48226353000">+48 22 635 30 00</a>
-        <a class="btn btn-gold" href="../index.html#booking">Quote / Book</a>
+        <a href="#services">Services</a>
+      <a href="../pages/cars.html">Cars</a>
+        <a href="../pages/about.html">About us</a>
+        <a href="../pages/contact.html">Contact</a>
+        <button class="lang" aria-label="Language">EN</button>
       </nav>
+
+      <div class="actions">
+        <a class="tel" href="tel:+48226353000">+48 22 635 30 00</a>
+        <a class="btn btn-gold" href="#booking">Quote / Book</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
