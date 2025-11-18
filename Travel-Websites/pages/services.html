@@ -3,117 +3,148 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact • LimousineService</title>
+  <title>Services • LimousineService</title>
 
-  <!-- GLOBAL CSS (asegúrate que existe en ../css/styles.css) -->
+  <!-- CSS global -->
   <link rel="stylesheet" href="../css/styles.css">
 
-  <!-- CSS de Contacto (opcional). Si no lo tienes, comenta esta línea -->
-  <!-- <link rel="stylesheet" href="../css/contact.css"> -->
+  <!-- CSS específico de services -->
+  <link rel="stylesheet" href="../css/services.css">
 
- <link rel="stylesheet" href="../css/styles.css">
-<link rel="stylesheet" href="../css/contact.css">
-
-<body class="dark">
-
-  <link rel="stylesheet" href="styles.css">
-  <script src="main.js" defer></script>
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
+<body class="dark">
 
-  <!-- =================== NAVBAR =================== -->
-  <header class="site-header" id="header">
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
     <div class="container nav">
       <a class="brand" href="../index.html">LIMOUSINESERVICE.PL</a>
 
       <nav class="menu">
-        <a href="#services">Services</a>
-      <a href="../pages/cars.html">Cars</a>
+        <a class="active" href="services.html">Services</a>
+        <a href="../pages/cars.html">Cars</a>
         <a href="../pages/about.html">About us</a>
         <a href="../pages/contact.html">Contact</a>
-        <button class="lang" aria-label="Language">EN</button>
+        <button class="lang">EN</button>
       </nav>
 
       <div class="actions">
         <a class="tel" href="tel:+48226353000">+48 22 635 30 00</a>
-        <a class="btn btn-gold" href="#booking">Quote / Book</a>
+        <a class="btn btn-gold" href="../index.html#booking">Quote / Book</a>
       </div>
-      <button class="burger" id="burger" aria-label="Open menu">
+
+      <button class="burger" id="burger">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
+  <!-- ============ MAIN ============ -->
+  <main>
 
+    <!-- ================= HERO SECTION ================= -->
+    <section class="services-hero">
+      <div class="services-hero-overlay"></div>
+      <img class="services-hero-img" src="../assets/services-hero.jpg">
 
+      <div class="services-hero-content">
+        <p class="kicker">MR. & MRS. PUNTA CANA TRANSFERS</p>
+        <h1 class="title">WHAT WE OFFER</h1>
+      </div>
+    </section>
 
-        <!-- =================== FOOTER =================== -->
+    <!-- ============ AIRPORT TRANSFERS ============ -->
+    <section class="service-block reveal">
+      <div class="service-text">
+        <h2>DOMINICAN REPUBLIC<br>AIRPORT TRANSFERS</h2>
+
+        <p>Welcome to Mr and Mrs Punta Cana! We are pleased to offer you a transfer service to ensure that your journey to your resort is comfortable, safe, and hassle-free.</p>
+
+        <p>At Mr. & Mrs. Punta Cana, we understand the importance of starting your vacation in the best possible way. Therefore, we take pride in providing you with a high-quality transfer from the airport to your resort in PuntaCana.</p>
+
+        <p>Our transfer service is built on excellence and personalized attention...</p>
+
+        <a class="btn-blue" href="#">LEARN MORE</a>
+      </div>
+
+      <div class="service-img">
+        <img src="../assets/airport-bus.png">
+      </div>
+    </section>
+
+    <!-- ============ PRIVATE TRANSPORTATION ============ -->
+    <section class="service-block reverse reveal">
+      <div class="service-img">
+        <img src="../assets/suv.png">
+      </div>
+
+      <div class="service-text">
+        <h2>DOMINICAN REPUBLIC<br>PRIVATE TRANSPORTATION</h2>
+
+        <p>The Dominican Republic’s top private transportation service...</p>
+
+        <a class="btn-blue" href="#">LEARN MORE</a>
+      </div>
+    </section>
+
+    <!-- ============ TOURS & EXCURSIONS ============ -->
+    <section class="service-block reveal">
+      <div class="service-text">
+        <h2>DOMINICAN REPUBLIC<br>TOURS & EXCURSIONS</h2>
+
+        <p>At Mr. & Mrs. Punta Cana, we are thrilled to be your gateway...</p>
+
+        <a class="btn-blue" href="#">FIND FUN TODAY</a>
+      </div>
+
+      <div class="service-img">
+        <img src="../assets/horses.png">
+      </div>
+    </section>
+
+    <!-- ============ FINAL FULL-BG AREA ============ -->
+    <section class="service-final">
+      <div class="overlay"></div>
+      <img src="../assets/final-bg.jpg" class="final-bg">
+      <div class="final-content">
+        <h2>READY FOR FUN?</h2>
+        <p>We want to know your needs exactly so that we can provide the perfect solution.</p>
+        <a class="btn-blue" href="#">GET IN TOUCH</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container footer-grid">
       <div>
         <h4>Company Details</h4>
         <p>LIMOS.PL Nowicki S.K.A.<br>Niska 3/18<br>00-179 Warsaw, Poland<br>NIP EU: PL 525-19-10-653</p>
       </div>
+
       <div>
         <h4>Office</h4>
         <p>Biały Kamień 2 / U6<br>02-593 Warsaw, Poland</p>
-        <a class="btn btn-small" href="#">Download vCard</a>
+        <a class="btn btn-small">Download vCard</a>
       </div>
+
       <div>
         <h4>Hours</h4>
         <p>Mon – Fri: 9:00 am – 5:00 pm<br>Sat – Sun: Office closed</p>
-        <p class="muted">We monitor emails, webchat and phone calls outside of office hours.</p>
       </div>
     </div>
 
     <div class="container legal">
       <span>All rights reserved © <span id="year"></span></span>
-      <nav class="foot-nav">
-        <a href="#">Career</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
-      </nav>
     </div>
   </footer>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact • LimousineService</title>
 
-  <!-- GLOBAL CSS (asegúrate que existe en ../css/styles.css) -->
-  <link rel="stylesheet" href="../css/styles.css">
-
-  <!-- CSS de Contacto (opcional). Si no lo tienes, comenta esta línea -->
-  <!-- <link rel="stylesheet" href="../css/contact.css"> -->
-
- <link rel="stylesheet" href="../css/styles.css">
-<link rel="stylesheet" href="../css/contact.css">
-
-<body class="dark">
-
-  <link rel="stylesheet" href="styles.css">
-  <script src="main.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-
-
-  <!-- JS global -->
+  <!-- Scripts -->
   <script src="../scripts/main.js"></script>
+  <script src="../scripts/services.js"></script>
 
-  <!-- JS de contacto (opcional). Comenta si no existe -->
-  <!-- <script src="../scripts/contact.js"></script> -->
-
-  <script>
-    // Failsafe: evita error si no tienes contact.js todavía
-    const f = document.getElementById('contactForm');
-    if (f) f.addEventListener('submit', e => {
-      e.preventDefault();
-      alert('Thank you! We will respond soon.');
-      f.reset();
-    });
-  </script>
 </body>
 </html>
