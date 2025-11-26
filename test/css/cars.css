@@ -1,0 +1,213 @@
+
+/* ================= HERO ================= */
+.services-hero {
+  position: relative;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    radial-gradient(1200px 600px at 50% -10%, rgba(255,138,0,.45), transparent 60%),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+  filter: saturate(1.05);
+  transform: scale(1.02);
+  
+}
+
+.services-hero-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.55);
+}
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.services-hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 5;
+}
+
+.services-hero .kicker {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.services-hero .title {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+/* ======= CARS PAGE — rectangular, sin bordes redondeados ======= */
+
+.cars-hero{
+  background:#0f1010;
+  padding:56px 0 28px;
+  border-bottom:1px solid #1c1c1c;
+}
+.cars-hero h1{
+  font-size:48px;
+  line-height:1.15;
+  margin:0 0 8px;
+  color:#fff;
+  letter-spacing:.2px;
+}
+.cars-hero p{
+  color:#b8b8b8;
+  margin:0;
+}
+
+/* ----- Strip / carrusel (fondo blanco) ----- */
+.cars-strip-wrap{
+  background:#F2F3F5;
+  padding:22px 0 20px;   /* 🔥 antes 60px — esto causaba el corte */
+  border-bottom:1px solid #e6e6e6;
+}
+
+.cars-strip{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:minmax(300px, 1fr);
+  gap:24px;
+
+  overflow-x:auto;
+  overflow-y:visible;   /* 🔥 evita que se corte al hacer scroll */
+
+  scroll-snap-type:none !important;
+  padding:16px 0 20px;  /* 🔥 padding reubicado aquí */
+}
+
+.car-chip{
+  background:#ffffff;
+  color:#151515;
+  border:1px solid #e5e5e5;
+  padding:18px 18px 22px;
+  transition:.25s ease;
+}
+.car-chip:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(0,0,0,.12);
+}
+.car-chip.active{
+  outline:2px solid #e7cb84;
+  outline-offset:-2px;
+}
+.car-chip img{
+  display:block;
+  width:100%;
+  height:160px;
+  object-fit:contain;
+}
+.car-chip h3{
+  margin:14px 0 6px;
+  font-size:20px;
+  color:#111;
+}
+.car-chip .sub{
+  color:#b08c3a;
+  font-size:14px;
+}
+
+/* Botones del strip */
+.strip-toolbar{
+  display:flex;
+  gap:10px;
+  justify-content:flex-end;
+  margin-bottom:6px;
+}
+.strip-btn{
+  width:46px; height:42px;
+  background:#fff;
+  color:#e7cb84;
+  border:1px solid #e6e6e6;
+  cursor:pointer;
+}
+.strip-btn:hover{ background:#f9f9f9; }
+
+/* ----- Detalle ----- */
+.car-detail-section{
+  background:#0b0b0b;
+  padding:36px 0 64px;
+}
+.car-detail{
+  display:grid;
+  grid-template-columns: 1.25fr .9fr;
+  gap:40px;
+  align-items:start;
+}
+.detail-image{
+  background:#0f0f0f;
+  border:1px solid #1f1f1f;
+  padding:10px;
+}
+.detail-image img{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  display:block;
+}
+
+.detail-info h2{
+  margin:2px 0 6px;
+  font-size:34px;
+  color:#fff;
+}
+.detail-class{
+  margin:0 0 16px;
+  color:#d9b866;
+  font-weight:600;
+}
+
+.detail-stats{
+  display:flex;
+  gap:26px;
+  color:#ddd;
+  margin:10px 0 14px;
+}
+.detail-stats strong{
+  color:#fff;
+  font-weight:700;
+}
+
+.detail-features{
+  margin:8px 0 0;
+  padding-left:18px;
+  color:#cfcfcf;
+}
+.detail-features li{ margin:6px 0; }
+
+/* Footer simple */
+.site-footer{
+  border-top:1px solid #1c1c1c;
+  background:#0f1010;
+  color:#9b9b9b;
+  padding:18px 0;
+}
+.footer-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.footer-links{ display:flex; gap:16px; }
+.footer-links a{ color:#c2c2c2; }
+
+/* Responsive */
+@media (max-width: 1024px){
+  .car-detail{
+    grid-template-columns:1fr;
+  }
+  .detail-image img{ height:420px; }
+}

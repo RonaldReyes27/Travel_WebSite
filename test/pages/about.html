@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact • LimousineService</title>
+
+  <!-- GLOBAL CSS (asegúrate que existe en ../css/styles.css) -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- CSS de Contacto (opcional). Si no lo tienes, comenta esta línea -->
+  <!-- <link rel="stylesheet" href="../css/contact.css"> -->
+
+ <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/contact.css">
+
+<body class="dark">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+  <!-- =================== NAVBAR =================== -->
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a class="brand" href="../index.html">LIMOUSINESERVICE.PL</a>
+
+      <nav class="menu">
+        <a href="../pages/services.html">Services</a>
+      <a href="../pages/cars.html">Cars</a>
+        <a href="../pages/about.html">About us</a>
+        <a href="../pages/contact.html">Contact</a>
+        <button class="lang" aria-label="Language">EN</button>
+      </nav>
+
+      <div class="actions">
+        <a class="tel" href="tel:+48226353000">+48 22 635 30 00</a>
+        <a class="btn btn-gold" href="#booking">Quote / Book</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- === ABOUT US === -->
+    <section id="about" class="app-section" aria-label="Acerca de nosotros">
+  
+      <!-- formulario y mas -->
+
+    <section id="contact" class="app-section">
+      <div class="contact-hero">
+        <div class="contact-hero-overlay">
+          <h1>Contacte con nosotros</h1>
+          <p>Nos encantaría conocer su opinión.</p>
+        </div>
+      </div>
+
+
+
+      <!-- Historia -->
+      <section aria-labelledby="about-historia-title" class="about-section">
+        <div class="container">
+          <h2 id="about-historia-title" class="about-title fade-up">Nuestra historia</h2>
+          <p class="about-sub fade-up">De un sueño a la realidad, descubre cómo nos convertimos en un servicio líder de traslados y tours en Punta Cana.</p>
+
+          <div class="about-history">
+            <div class="fade-up">
+              <p>Fundada en 2010 con una visión simple pero contundente: brindar servicios de transporte seguros, cómodos y confiables que superen las expectativas de nuestros huéspedes. Lo que comenzó como una pequeña empresa familiar con un solo vehículo se ha convertido en una de las empresas de traslados y tours más confiables de Punta Cana.</p>
+              <p>Nuestro fundador, impulsado por una pasión por la hospitalidad y un profundo amor por la República Dominicana, reconoció la necesidad de servicios de transporte premium que permitieran a los visitantes relajarse verdaderamente y disfrutar de sus vacaciones desde el momento en que llegaban.</p>
+              <p>Hoy, nos enorgullecemos de haber atendido a más de 50,000 clientes de todo el mundo, creando recuerdos inolvidables en el hermoso destino de Punta Cana.</p>
+            </div>
+
+            <!-- Cambia la imagen por la tuya -->
+            <div class="about-photo fade-up" role="img" aria-label="Buggies recorriendo caminos en Punta Cana"></div>
+          </div>
+        </div>
+      </section>
+
+
+        <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Company Details</h4>
+        <p>LIMOS.PL Nowicki S.K.A.<br>Niska 3/18<br>00-179 Warsaw, Poland<br>NIP EU: PL 525-19-10-653</p>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <p>Biały Kamień 2 / U6<br>02-593 Warsaw, Poland</p>
+        <a class="btn btn-small" href="#">Download vCard</a>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon – Fri: 9:00 am – 5:00 pm<br>Sat – Sun: Office closed</p>
+        <p class="muted">We monitor emails, webchat and phone calls outside of office hours.</p>
+      </div>
+    </div>
+
+    <div class="container legal">
+      <span>All rights reserved © <span id="year"></span></span>
+      <nav class="foot-nav">
+        <a href="#">Career</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact • LimousineService</title>
+
+  <!-- GLOBAL CSS (asegúrate que existe en ../css/styles.css) -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- CSS de Contacto (opcional). Si no lo tienes, comenta esta línea -->
+  <!-- <link rel="stylesheet" href="../css/contact.css"> -->
+
+ <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/contact.css">
+
+<body class="dark">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+  <!-- JS global -->
+  <script src="../scripts/main.js"></script>
+
+  <!-- JS de contacto (opcional). Comenta si no existe -->
+  <!-- <script src="../scripts/contact.js"></script> -->
+
+  <script>
+    // Failsafe: evita error si no tienes contact.js todavía
+    const f = document.getElementById('contactForm');
+    if (f) f.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you! We will respond soon.');
+      f.reset();
+    });
+  </script>
+</body>
+</html>

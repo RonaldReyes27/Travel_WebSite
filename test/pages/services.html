@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services • LimousineService</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- CSS específico de services -->
+  <link rel="stylesheet" href="../css/services.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dark">
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../index.html">LIMOUSINESERVICE.PL</a>
+
+      <nav class="menu">
+        <a class="active" href="services.html">Services</a>
+        <a href="../pages/cars.html">Cars</a>
+        <a href="../pages/about.html">About us</a>
+        <a href="../pages/contact.html">Contact</a>
+        <button class="lang">EN</button>
+      </nav>
+
+      <div class="actions">
+        <a class="tel" href="tel:+48226353000">+48 22 635 30 00</a>
+        <a class="btn btn-gold" href="../index.html#booking">Quote / Book</a>
+      </div>
+
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="services-hero">
+      <div class="services-hero-overlay"></div>
+      <img class="services-hero-img" src="../assets/services-hero.jpg">
+
+      <div class="services-hero-content">
+        <p class="kicker">MR. & MRS. PUNTA CANA TRANSFERS</p>
+        <h1 class="title">WHAT WE OFFER</h1>
+      </div>
+    </section>
+
+   <!-- ================= AIRPORT TRANSFERS (WHITE BACKGROUND) ================= -->
+<section class="service-block service-block--light reveal">
+
+  <div class="service-text airport-light-text">
+    <h2>DOMINICAN REPUBLIC<br>AIRPORT TRANSFERS</h2>
+
+    <p>
+      Welcome to Mr and Mrs Punta Cana! We are pleased to offer you a high-quality transfer 
+      service to ensure your trip is comfortable, safe and hassle-free.
+    </p>
+
+    <p>
+      Our drivers are professional, friendly and always on time. We provide first-class 
+      service from the airport straight to your hotel or resort.
+    </p>
+
+    <p>
+      Your vacation begins the moment you land — and we make sure it starts the right way.
+    </p>
+  </div>
+
+ <div class="service-form">
+  <div class="transfer-box">
+
+    <!-- TABS -->
+    <div class="transfer-tabs">
+      <button class="tab active" data-tab="oneway">One way</button>
+      <button class="tab" data-tab="hourly">Hourly</button>
+    </div>
+
+    <!-- FORM ONE WAY -->
+    <form class="form-oneway" data-form="oneway">
+      <label>Pickup location</label>
+      <input type="text" placeholder="Airport / Hotel / Address">
+
+      <label>Destination</label>
+      <input type="text" placeholder="City / Address">
+
+      <label>Date</label>
+      <input type="date">
+
+      <div class="row">
+        <div>
+          <label>Hour</label>
+          <input type="number" placeholder="HH">
+        </div>
+
+        <div>
+          <label>Minutes</label>
+          <input type="number" placeholder="MM">
+        </div>
+      </div>
+
+      <button class="search-btn">Search →</button>
+
+      <p class="local-time">Local time: <span id="localTime"></span></p>
+    </form>
+
+    <!-- FORM HOURLY -->
+    <form class="form-hourly hidden" data-form="hourly">
+      <label>Pickup location</label>
+      <input type="text" placeholder="Airport / Hotel / Address">
+
+      <label>Date</label>
+      <input type="date">
+
+      <label>Hours</label>
+      <input type="number" placeholder="e.g., 3">
+
+      <button class="search-btn">Search →</button>
+
+      <p class="local-time">Local time: <span id="localTime2"></span></p>
+    </form>
+
+  </div>
+</div>
+
+</section>
+    <!-- ============ TOURS & EXCURSIONS ============ -->
+    <section class="service-block service-tours reveal">
+      <div class="service-text">
+        <h2>DOMINICAN REPUBLIC<br>TOURS & EXCURSIONS</h2>
+
+        <p>At Mr. & Mrs. Punta Cana, we are thrilled to be your gateway...</p>
+
+        <a class="btn-blue" href="#">FIND FUN TODAY</a>
+      </div>
+
+      <div class="service-img">
+        <img src="../assets/horses.png">
+      </div>
+    </section>
+
+    <!-- ============ FINAL FULL-BG AREA ============ -->
+    <section class="service-final service-final-bg reveal">
+      <div class="overlay"></div>
+      <img src="../assets/final-bg.jpg" class="final-bg">
+      <div class="final-content">
+        <h2>READY FOR FUN?</h2>
+        <p>We want to know your needs exactly so that we can provide the perfect solution.</p>
+        <a class="btn-blue" href="#">GET IN TOUCH</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Company Details</h4>
+        <p>LIMOS.PL Nowicki S.K.A.<br>Niska 3/18<br>00-179 Warsaw, Poland<br>NIP EU: PL 525-19-10-653</p>
+      </div>
+
+      <div>
+        <h4>Office</h4>
+        <p>Biały Kamień 2 / U6<br>02-593 Warsaw, Poland</p>
+        <a class="btn btn-small">Download vCard</a>
+      </div>
+
+      <div>
+        <h4>Hours</h4>
+        <p>Mon – Fri: 9:00 am – 5:00 pm<br>Sat – Sun: Office closed</p>
+      </div>
+    </div>
+
+    <div class="container legal">
+      <span>All rights reserved © <span id="year"></span></span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/services.js"></script>
+
+</body>
+</html>

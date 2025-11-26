@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LIMOUSINESERVICE.PL – Class and Comfort</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- =================== NAVBAR =================== -->
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a class="brand" href="#hero">LIMOUSINESERVICE.PL</a>
+
+      <nav class="menu">
+        <a href="pages/services.html">Services</a>
+        <a href="pages/cars.html">Cars</a>
+        <a href="pages/about.html">About us</a>
+        <a href="pages/contact.html">Contact</a>
+        <button class="lang" aria-label="Language">EN</button>
+      </nav>
+
+      <div class="actions">
+        <a class="tel" href="tel:+48226353000">+48 22 635 30 00</a>
+        <a class="btn btn-gold" href="#booking">Quote / Book</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="hero" data-parallax>
+
+    <!-- Usar video + fallback PERO controlado -->
+    <div class="hero-media">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="assets/hero.mp4" type="video/mp4">
+  </video>
+</div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <h1>Class and comfort</h1>
+        <p>Prestigious chauffeur-driven limousine rental for exceptional journeys.</p>
+        <a class="btn btn-outline" href="#about">Read More →</a>
+      </div>
+
+      <!-- Booking Card (nuevo formulario) -->
+      <aside class="booking reveal" id="booking">
+        <h2 class="form-title">Reserve your transfer</h2>
+
+        <form class="booking-form" id="formReserva" autocomplete="off">
+
+          <label class="field">
+            <span>Origin</span>
+            <select id="origen" required>
+              <option value="">Select origin</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Destination</span>
+            <select id="destino" required>
+              <option value="">Select destination</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Vehicle type</span>
+            <select id="vehiculo" required>
+              <option value="standard">Standard</option>
+              <option value="suv">SUV</option>
+              <option value="van">Van</option>
+            </select>
+          </label>
+
+          <div class="grid-2">
+            <label class="field">
+              <span>Date (Pick up)</span>
+              <input type="date" id="fechaIda" required>
+            </label>
+            <label class="field">
+              <span>Time (Pick up)</span>
+              <input type="time" id="horaIda" required>
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label class="field">
+              <span>Return date (optional)</span>
+              <input type="date" id="fechaRegreso">
+            </label>
+            <label class="field">
+              <span>Return time (optional)</span>
+              <input type="time" id="horaRegreso">
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Flight number (Pick up)</span>
+            <input id="vueloIda" placeholder="e.g. UA 1862">
+          </label>
+
+          <label class="field">
+            <span>Flight number (Return)</span>
+            <input id="vueloRegreso" placeholder="e.g. UA 1863">
+          </label>
+
+          <h3 class="extras-title">Extras</h3>
+
+          <label class="checkbox-field">
+            <input type="checkbox" id="beer">
+            <span>6-Pack Presidente (+$15)</span>
+          </label>
+
+          <label class="checkbox-field">
+            <input type="checkbox" id="water">
+            <span>Water (+$5)</span>
+          </label>
+
+          <h3 class="price-title">Price: <span id="precioAuto">$0</span></h3>
+          <div id="precios" class="price-output"></div>
+
+          <button class="btn btn-gold w-100" type="submit">Get quote →</button>
+          <p class="tz-hint" id="tzHint"></p>
+        </form>
+
+        <h3 class="resume-title">Summary</h3>
+        <div id="resultado"></div>
+      </aside>
+    </div>
+  </section>
+
+ <!-- SERVICES -->
+<section id="services" class="section section--light">
+  <div class="container">
+    <header class="section-head head-row reveal">
+      <h2>Our Services</h2>
+      <a class="more-link" href="pages/services.html">More About Services →</a>
+
+    </header>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <article class="svc-card reveal">
+        <div class="svc-media">
+          <img
+            src="medias/luxury.jpg"
+            alt="Luxury Chauffeur Service">
+        </div>
+        <div class="svc-body">
+          <h3>Luxury Chauffeur Service</h3>
+          <p>Enjoy refined travel with our luxury chauffeur service, offering premium comfort and seamless journeys worldwide.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="svc-card reveal">
+        <div class="svc-media">
+          <img
+            src="medias/chicos.jpg"
+            alt="Corporate Travel and Events">
+        </div>
+        <div class="svc-body">
+          <h3>Corporate Travel and Events</h3>
+          <p>Our corporate chauffeur service provides punctual, discreet transport for business trips and events, ensuring best experience.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="svc-card reveal">
+        <div class="svc-media">
+          <img
+            src="medias/welcome.jpg"
+            alt="Airports Transfer Service">
+        </div>
+        <div class="svc-body">
+          <h3>Airports Transfer Service</h3>
+          <p>Start or end your trip smoothly with our airport transfer service, focused on timely pickups and effortless comfort.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+ <!-- CARS (carousel) -->
+<section id="cars" class="section">
+  <div class="container">
+    <header class="section-head head-row reveal">
+      <h2>Our Cars</h2>
+      <a class="more-link" href="pages/cars.html">Our Fleet →</a>
+
+    </header>
+
+    <div class="car-carousel">
+      <button class="car-nav car-prev" aria-label="Previous">←</button>
+
+      <div class="car-track" id="carTrack">
+        <!-- Slide 1 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>Hyundai Starex</h3>
+            <span class="car-class">Minivan</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="medias/van.jpg" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>6</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>6</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>Toyoya Hiace</h3>
+            <span class="car-class">Van</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="medias/vann.jpg" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>10</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>10</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>Bus</h3>
+            <span class="car-class">Bus</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="medias/bus.jpg" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>49</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>49</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+
+        <!-- Slide 4 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>Chevrolet Suburban</h3>
+            <span class="car-class">Luxury Suburban</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="medias/suburban.jpg" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>5</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>5</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+
+        <!-- Slide 5 -->
+        <article class="car-card reveal">
+          <div class="car-header">
+            <h3>Cadillac Escalade</h3>
+            <span class="car-class">Luxury Cadillac</span>
+          </div>
+          <div class="car-media" data-follow>
+            <img src="medias/cadillac.jpg" alt="">
+          </div>
+          <ul class="car-specs">
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10a6 6 0 0 1 12 0v10"/><circle cx="12" cy="6" r="1.5"/></svg>
+              <span>Passengers: <b>5</b> + chauffeur</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4zM9 8V5a3 3 0 0 1 6 0v3"/></svg>
+              <span>Bags: <b>5</b></span></li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-full car-cta">More Details <span>→</span></a>
+        </article>
+      </div>
+
+      <button class="car-nav car-next" aria-label="Next">→</button>
+    </div>
+  </div>
+</section>
+
+ <!-- ABOUT (white preview panel) -->
+<section id="about" class="section about-preview">
+  <div class="container">
+    <div class="about-card reveal">
+      <span class="about-bar" aria-hidden="true"></span>
+
+      <div class="about-wrap">
+        <!-- Galería izquierda -->
+        <div class="about-gallery">
+          <img src="medias/recepcion.jpg" alt="">
+          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="">
+          <img src="medias/pancarta.jpg" alt="">
+        </div>
+
+        <!-- Texto derecha -->
+        <div class="about-copy">
+          <header class="head-row">
+            <h2>About Us</h2>
+            <a class="more-link" href="pages/about.html">More About Us →</a>
+            
+          </header>
+
+          <p><strong>Limousineservice.pl</strong> is a Polish chauffeur service dedicated to providing an exceptional level of care, with our clients’ needs at the very heart of our work. We are a team of experienced perfectionists, striving to offer you complete freedom and comfort, while leaving the details to us.</p>
+
+          <p>Our service includes a carefully selected team of top-tier chauffeurs and luxury limousines, available throughout Poland and numerous international destinations. Every detail of your journey is meticulously crafted to match your unique requirements.</p>
+
+          <p>Our professional, discreet, and transparent service also includes comprehensive concierge support. Book your chauffeur service with us and let us take care of everything.</p>
+
+          <aside class="award row">
+            <img class="award-logo" src="medias/verificado.png" alt="LUXlife">
+            <p>We are a proud winner of the <em>LuxLife Best International Limousine &amp; Chauffeur Service Award</em>.</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- =================== CONTACT BAND =================== -->
+  <section class="contact-band" id="contact">
+    <div class="container band-grid">
+      <div class="band-item">
+        <span class="band-title">Phone</span>
+        <a href="tel:+48226353000">+48 22 635 30 00</a>
+      </div>
+      <div class="band-item">
+        <span class="band-title">E-mail</span>
+        <a href="mailto:info@limousineservice.pl">info@limousineservice.pl</a>
+      </div>
+      <div class="band-item">
+        <span class="band-title">WhatsApp</span>
+        <a href="https://wa.me/48721600000" target="_blank" rel="noopener">48721600000</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Company Details</h4>
+        <p>LIMOS.PL Nowicki S.K.A.<br>Niska 3/18<br>00-179 Warsaw, Poland<br>NIP EU: PL 525-19-10-653</p>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <p>Biały Kamień 2 / U6<br>02-593 Warsaw, Poland</p>
+        <a class="btn btn-small" href="#">Download vCard</a>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon – Fri: 9:00 am – 5:00 pm<br>Sat – Sun: Office closed</p>
+        <p class="muted">We monitor emails, webchat and phone calls outside of office hours.</p>
+      </div>
+    </div>
+
+    <div class="container legal">
+      <span>All rights reserved © <span id="year"></span></span>
+      <nav class="foot-nav">
+        <a href="#">Career</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating -->
+  <a class="wa" href="https://wa.me/48721600000" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp Us</a>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
